@@ -9,12 +9,11 @@ tietokantasovellus
 ### Projektin kuvaus
 
 Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin
-kaupunginosat sekä kadut. Tavallinen käyttäjä voi merkata katuja tai alueita
-käydyksi sekä nähdä yhteenvedon kuinka suuressa osassa kaikista kaduista tai
-tietyn kaupunginosan kaduista käyttäjä on käynyt. Admin voi tarkastella 
-Käyttäjät voivat luoda myös listoja erilaisilla teemoilla, kuten suosikki-
-katunsa Helsingissä. 
+kaupunginosat ja kadut. Käyttäjä voi luoda omia listoja esimerkiksi
+suosikkikaduistaan ja pitää kirjaa missä kaikilla kaduilla on käynyt.
 
 ### Dokumentaatio
 
-Tietokantakaavio
+[Tietokantakaavio](https://github.com/noorarytila/kadunkulkija/blob/master/dokumentaatio/kadunkulkija.png)
+
+### Jatkokehitysideoita
