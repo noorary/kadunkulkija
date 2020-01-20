@@ -4,13 +4,15 @@
 
 Tämä sovellus on toteutettu keväällä 2020 Helsingin yliopiston
 tietojenkäsittelytieteen kandiohjelman kurssilla Aineopintojen harjoitustyö:
-tietokantasovellus
+tietokantasovellus.
 
 ### Projektin kuvaus
 
 Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin
 kaupunginosat ja kadut. Käyttäjä voi luoda omia listoja esimerkiksi
 suosikkikaduistaan ja pitää kirjaa missä kaikilla kaduilla on käynyt.
+
+
 
 ### Dokumentaatio
 
