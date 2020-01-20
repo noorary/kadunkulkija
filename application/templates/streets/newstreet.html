@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+  
+{% block body %}
+<form method="POST" action="{{ url_for('street_add') }}">
+  <input type="text" name="name"/>
+  <input type="submit" value="Add a new street"/>
+</form>
+{% endblock %}

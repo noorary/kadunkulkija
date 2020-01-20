@@ -10,6 +10,7 @@ db = SQLAlchemy(app)
 from application import views
 
 from application.streets import models
+from application.streets import views
 
 db.create_all()
 
