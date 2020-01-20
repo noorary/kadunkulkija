@@ -12,6 +12,10 @@ Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin
 kaupunginosat ja kadut. Käyttäjä voi luoda omia listoja esimerkiksi
 suosikkikaduistaan ja pitää kirjaa missä kaikilla kaduilla on käynyt.
 
+Käyttäjä voi luoda sovellukseen suunnitelman, johon lisätään päivämäärä ja katu, jossa on tarkoitus vierailla.
+Vierailun jälkeen katu voidaan merkitä käydyksi. 
+
+Admin käyttäjät voivat lisätä kaupunginosia ja katuja sovellukseen, sekä päivittää ja poistaa niitä. 
 
 
 ### Dokumentaatio
