@@ -14,6 +14,8 @@ suosikkikaduistaan ja pitää kirjaa missä kaikilla kaduilla on käynyt.
 
 ### Dokumentaatio
 
-[Tietokantakaavio](https://github.com/noorarytila/kadunkulkija/blob/master/dokumentaatio/kadunkulkija.png)
+Tietokantakaavio
+
+![Tietokantakaavio](https://raw.githubusercontent.com/noorarytila/kadunkulkija/master/dokumentaatio/kadunkulkija.png)
 
 ### Jatkokehitysideoita
