@@ -13,7 +13,8 @@ kaupunginosat ja kadut. Käyttäjä voi luoda omia listoja esimerkiksi
 suosikkikaduistaan ja pitää kirjaa missä kaikilla kaduilla on käynyt.
 
 Käyttäjä voi luoda sovellukseen suunnitelman, johon lisätään päivämäärä ja katu, jossa on tarkoitus vierailla.
-Vierailun jälkeen katu voidaan merkitä käydyksi. 
+Vierailun jälkeen katu voidaan merkitä käydyksi. Käyttäjä voi luoda, tarkastella, muokata ja 
+poistaa suunnitelmia. 
 
 Käyttäjät voivat lisätä kaupunginosia ja katuja sovellukseen. Admin-käyttäjät voivat päivittää katujen ja kaupunginosien tietoja
 sekä poistaa niitä.  
