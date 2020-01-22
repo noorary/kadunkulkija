@@ -4,7 +4,7 @@ from application.streets.models import Street
 
 @app.route("/streets", methods=["GET"])
 def streets_index():
-	return render_template("streets/list.html", streets = Street.query.all())
+	return render_template("/streets/list.html", streets = Street.query.all())
 
 @app.route("/streets/newstreet/")
 def street_form():
