@@ -30,13 +30,57 @@ Tietokantakaavio
 
 ![Tietokantakaavio](https://raw.githubusercontent.com/noorarytila/kadunkulkija/master/dokumentaatio/kadunkulkija.png)
 
+[Käyttötapaukset](https://github.com/noorarytila/kadunkulkija/blob/master/dokumentaatio/kayttotapaukset.md)
+
+
 ### TO DO - viikko 2
 
 - [ ] tietokannassa olevaa tietoa voi päivittää
 - [ ] html-sivu tiedon päivittämiseen
 - [x] sovellus Herokuun
 - [x] Heroku-linkki README.md
-- [ ] user storyt dokumentaatioon
-- [ ] README:hen linkit user storyihin
+- [x] user storyt dokumentaatioon
+- [x] README:hen linkit user storyihin
+
+
+### TO DO - viikko 3
+
+- [ ] lomakkeet validioivat syötetyn tiedon
+- [ ] sovelluksessa on mahdollisuus rekistöröitymiseen
+- [ ] sovelluksessa on mahdollisuus kirjautumiseen
+- [ ] README:stä löytyy testitunnuksen tiedot
+- [ ] sovelluksessa on ainakin 2 tietokantataulua
+- [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
+- [ ] githubissa issuet päällä
+- [ ] koodikatselmointi
+- [ ] Herokussa käytetään PostgreSQL-tietokannanhallintajärjestelmää
+
+## TO DO - viikko 4
+
+- [ ] sovelluksessa on ainakin 3 tietokantataulua joista jokainen on käytössä
+- [ ] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
+- [ ] boostrap tms käytössä ulkoasun tyylittelyyn
+- [ ] toiminnallisuus on täydentynyt
+
+## TO DO - viikko 5
+
+- [ ] autorisointi
+- [ ] käytettävyyden viilausta
+- [ ] toiminnallisuus on täydentynyt
+- [ ] asennusohje
+- [ ] käyttöohje
+
+## TO DO - viikko 6
+
+- [ ] toiminnallisuus on täydentynyt
+- [ ] ulkoasu, käytettävyys ja toiminnallisuus
+- [ ] dokumentaation päivittäminen ja lisääminen
+- [ ] koodikatselmointi
+
+## TO DO - viimeinen viikko
+
+- [ ] demo
+- [ ] viimeiset viilaukset
+- [ ] loppupalautus
 
 ### Jatkokehitysideoita
