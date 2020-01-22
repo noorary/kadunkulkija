@@ -1,5 +1,10 @@
-from application import app
-from flask import render_template, request
+from application import app, db
+from flask import redirect, render_template, request, url_for
+from application.streets.models import Street
+
+@app.route("/streets", methods=["GET"])
+def streets_index():
+	return render_template("streets/list.html", streets = Street.query.all())
 
 @app.route("/streets/newstreet/")
 def street_form():
@@ -7,6 +12,9 @@ def street_form():
 
 @app.route("/streets/", methods=["POST"])
 def street_add():
-    print(request.form.get("name"))
-  
-    return "hello world!"
+    s = Street(request.form.get("name"))
+
+    db.session().add(s)
+    db.session().commit()
+
+    return redirect(url_for("streets_index"))
