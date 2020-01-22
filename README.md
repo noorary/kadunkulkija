@@ -6,6 +6,10 @@ Tämä sovellus on toteutettu keväällä 2020 Helsingin yliopiston
 tietojenkäsittelytieteen kandiohjelman kurssilla Aineopintojen harjoitustyö:
 tietokantasovellus.
 
+### Heroku
+
+Sovellus löytyy Herokusta osoitteesta https://kadunkulkija.herokuapp.com/
+
 ### Projektin kuvaus
 
 Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin
@@ -30,8 +34,8 @@ Tietokantakaavio
 
 - [ ] tietokannassa olevaa tietoa voi päivittää
 - [ ] html-sivu tiedon päivittämiseen
-- [ ] sovellus Herokuun
-- [ ] Heroku-linkki README.md
+- [x] sovellus Herokuun
+- [x] Heroku-linkki README.md
 - [ ] user storyt dokumentaatioon
 - [ ] README:hen linkit user storyihin
 
