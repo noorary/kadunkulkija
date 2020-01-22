@@ -26,4 +26,13 @@ Tietokantakaavio
 
 ![Tietokantakaavio](https://raw.githubusercontent.com/noorarytila/kadunkulkija/master/dokumentaatio/kadunkulkija.png)
 
+### TO DO - viikko 2
+
+- [ ] tietokannassa olevaa tietoa voi päivittää
+- [ ] html-sivu tiedon päivittämiseen
+- [ ] sovellus Herokuun
+- [ ] Heroku-linkki README.md
+- [ ] user storyt dokumentaatioon
+- [ ] README:hen linkit user storyihin
+
 ### Jatkokehitysideoita
