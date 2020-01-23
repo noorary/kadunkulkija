@@ -26,7 +26,7 @@ def edit_street_name(street_id):
 
 
 @app.route("/streets/edit/", methods=["GET"])
-def strees_edit():
+def street_edit():
 
     return render_template("streets/editlist.html/", streets = Street.query.all() )
 
