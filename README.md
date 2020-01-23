@@ -35,8 +35,8 @@ Tietokantakaavio
 
 ### TO DO - viikko 2
 
-- [ ] tietokannassa olevaa tietoa voi päivittää
-- [ ] html-sivu tiedon päivittämiseen
+- [x] tietokannassa olevaa tietoa voi päivittää
+- [x] html-sivu tiedon päivittämiseen
 - [x] sovellus Herokuun
 - [x] Heroku-linkki README.md
 - [x] user storyt dokumentaatioon
