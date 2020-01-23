@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <table>
+    {% for street in streets %}
+    <td><a href="{{ url_for('edit_street_name', street_id=street.id) }}"> Edit {{ street.name }} </a></p>
+    {% endfor %}
+  </table>
+{% endblock %}

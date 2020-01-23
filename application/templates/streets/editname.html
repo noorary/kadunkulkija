@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<p> Give new name for the street </p>
+
+<form method="POST" action="{{ url_for('set_new_name', street_id=street.id) }}">
+    <input type="text" name="newname"/>
+    <input type="submit" value="Update name"/>
+</form>
+{% endblock %}

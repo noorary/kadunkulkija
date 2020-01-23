@@ -18,3 +18,25 @@ def street_add():
     db.session().commit()
 
     return redirect(url_for("streets_index"))
+
+@app.route("/streets/edit/<street_id>", methods=["GET"])
+def edit_street_name(street_id):
+
+    return render_template("streets/editname.html", street = Street.query.get(street_id))
+
+
+@app.route("/streets/edit/", methods=["GET"])
+def strees_edit():
+
+    return render_template("streets/editlist.html/", streets = Street.query.all() )
+
+@app.route("/streets/edit/ready/<street_id>", methods=["POST"])
+def set_new_name(street_id):
+
+    s = Street.query.get(street_id)
+    new = request.form.get("newname")
+
+    s.name = new
+    db.session().commit()
+
+    return redirect(url_for("streets_index"))
