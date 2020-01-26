@@ -35,17 +35,23 @@ Tietokantakaavio
 
 ### TO DO - viikko 3
 
+#### Kurssin vaatimukset
+
 - [ ] lomakkeet validioivat syötetyn tiedon
 - [ ] WTForms käyttöön nimen muuttamiseen
-- [ ] sovelluksessa on mahdollisuus rekistöröitymiseen
+- [x] sovelluksessa on mahdollisuus rekistöröitymiseen
 - [x] sovelluksessa on mahdollisuus kirjautumiseen
-- [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] README:stä löytyy testitunnuksen tiedot
-- [ ] sovelluksessa on ainakin 2 tietokantataulua
+- [x] sovelluksessa on ainakin 2 tietokantataulua
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
-- [ ] githubissa issuet päällä
-- [ ] koodikatselmointi
+- [x] githubissa issuet päällä
 - [ ] Herokussa käytetään PostgreSQL-tietokannanhallintajärjestelmää
+
+#### Muut
+
+- [ ] kirjautuminen onnistui - ilmoitus
+- [ ] kahta samaa käyttäjänimeä ei voi olla
+- [ ] salasanat tallennetaan tietokantaan kryptattuna
 
 ## TO DO - viikko 4
 
