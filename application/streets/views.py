@@ -13,7 +13,12 @@ def street_form():
 
 @app.route("/streets/", methods=["POST"])
 def street_add():
-    s = Street(request.form.get("name"))
+    form  = StreetForm(request.form)
+
+    if not form.validate():
+        return render_template("streets/newstreet.html", form = form)
+
+    s = Street(form.name.data)
 
     db.session().add(s)
     db.session().commit()

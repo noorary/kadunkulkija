@@ -33,21 +33,13 @@ Tietokantakaavio
 [Käyttötapaukset](https://github.com/noorarytila/kadunkulkija/blob/master/dokumentaatio/kayttotapaukset.md)
 
 
-### TO DO - viikko 2
-
-- [x] tietokannassa olevaa tietoa voi päivittää
-- [x] html-sivu tiedon päivittämiseen
-- [x] sovellus Herokuun
-- [x] Heroku-linkki README.md
-- [x] user storyt dokumentaatioon
-- [x] README:hen linkit user storyihin
-
-
 ### TO DO - viikko 3
 
 - [ ] lomakkeet validioivat syötetyn tiedon
+- [ ] WTForms käyttöön nimen muuttamiseen
 - [ ] sovelluksessa on mahdollisuus rekistöröitymiseen
-- [ ] sovelluksessa on mahdollisuus kirjautumiseen
+- [x] sovelluksessa on mahdollisuus kirjautumiseen
+- [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] README:stä löytyy testitunnuksen tiedot
 - [ ] sovelluksessa on ainakin 2 tietokantataulua
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
