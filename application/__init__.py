@@ -15,6 +15,8 @@ from application import views
 from application.streets import models
 from application.streets import views
 
+from application.districts import models
+
 from application.auth import models
 from application.auth import views
 
