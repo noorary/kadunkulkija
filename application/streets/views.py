@@ -1,5 +1,6 @@
 from application import app, db
 from flask import redirect, render_template, request, url_for
+from flask_login import login_required
 from application.streets.models import Street
 from application.streets.forms import StreetForm
 
@@ -8,6 +9,7 @@ def streets_index():
 	return render_template("/streets/list.html", streets = Street.query.all())
 
 @app.route("/streets/newstreet/")
+@login_required
 def street_form():
     return render_template("streets/newstreet.html", form = StreetForm())
 
@@ -26,12 +28,14 @@ def street_add():
     return redirect(url_for("streets_index"))
 
 @app.route("/streets/edit/<street_id>", methods=["GET"])
+@login_required
 def edit_street_name(street_id):
 
     return render_template("streets/editname.html", street = Street.query.get(street_id))
 
 
 @app.route("/streets/edit/", methods=["GET"])
+@login_required
 def street_edit():
 
     return render_template("streets/editlist.html/", streets = Street.query.all() )

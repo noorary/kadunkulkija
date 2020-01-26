@@ -46,12 +46,14 @@ Tietokantakaavio
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
 - [x] githubissa issuet päällä
 - [ ] Herokussa käytetään PostgreSQL-tietokannanhallintajärjestelmää
+- [ ] Viitteet taulujen välillä
 
 #### Muut
 
 - [ ] kirjautuminen onnistui - ilmoitus
 - [ ] kahta samaa käyttäjänimeä ei voi olla
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
+- [ ] selvitä miksi id=2 kadun nimen muokkaaminen ei onnistu
 
 ## TO DO - viikko 4
 
