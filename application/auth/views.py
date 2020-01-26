@@ -1,9 +1,10 @@
 from flask import render_template, request, redirect, url_for
 from flask_login import login_user, logout_user
 
-from application import app
+from application import app, db
 from application.auth.models import User
 from application.auth.forms import LoginForm
+from application.auth.forms import SignupForm
 
 @app.route("/auth/login", methods = ["GET", "POST"])
 def auth_login():
@@ -11,7 +12,7 @@ def auth_login():
         return render_template("auth/loginform.html", form = LoginForm())
 
     form = LoginForm(request.form)
-    # mahdolliset validoinnit
+    # TO DO validoinnit
 
     user = User.query.filter_by(username=form.username.data, password=form.password.data).first()
     if not user:
@@ -26,3 +27,25 @@ def auth_login():
 def auth_logout():
     logout_user()
     return redirect(url_for("index"))
+
+@app.route("/auth/signup", methods = ["GET", "POST"])
+def auth_signup():
+    if request.method == "GET":
+      return render_template("auth/signupform.html", form = SignupForm())
+
+    form = SignupForm(request.form)
+    # TO DO validioinnit
+
+    # TO DO lisää uuden käyttäjän tiedot tietokantaan
+
+    form = SignupForm(request.form)
+
+    u = User(form.name.data, form.username.data, form.password.data)
+
+    db.session().add(u)
+    db.session().commit()
+
+
+    # TO DO kahta samaa käyttäjänimeä ei voi olla
+    # TO DO ilmoitetaan rekistöröitymisen onnistumisesta
+    return redirect(url_for("auth_login"))
