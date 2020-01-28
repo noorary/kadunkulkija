@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <table>
+    <tr>
+      <th>Districts</th>
+    </tr>
+    {% for district in districts %}
+    <tr>
+      <td>{{ district.name }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
