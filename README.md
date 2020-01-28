@@ -53,7 +53,7 @@ Tietokantakaavio
 - [ ] kirjautuminen onnistui - ilmoitus
 - [ ] kahta samaa käyttäjänimeä ei voi olla
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
-- [ ] selvitä miksi id=2 kadun nimen muokkaaminen ei onnistu
+- [ ] kaupunginosa taulussa väh. yksi rivi täydellisenä
 
 ## TO DO - viikko 4
 
