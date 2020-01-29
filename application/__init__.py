@@ -15,7 +15,7 @@ else:
 
 
 db = SQLAlchemy(app)
-# migrate = Migrate(app, db)
+migrate = Migrate(app, db)
 
 from application import views
 
