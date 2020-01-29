@@ -20,9 +20,14 @@ def street_add():
     if not form.validate():
         return render_template("streets/newstreet.html", form = form)
 
-    s = Street(form.name.data)
+    
+    
 
-    db.session().add(s)
+    new_street = Street(form.name.data)
+    new_street.district_id = form.district.data
+    print(form.district.data)
+
+    db.session().add(new_street)
     db.session().commit()
 
     return redirect(url_for("streets_index"))

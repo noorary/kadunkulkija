@@ -8,5 +8,7 @@ class District(db.Model):
 
     name = db.Column(db.String(144), nullable=False)
 
+    streets = db.relationship("Street", backref='district', lazy=True)
+
     def __init__(self, name):
       self.name = name
