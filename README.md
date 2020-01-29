@@ -46,18 +46,23 @@ Tietokantakaavio
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
 - [x] githubissa issuet päällä
 - [ ] Herokussa käytetään PostgreSQL-tietokannanhallintajärjestelmää
-- [ ] Viitteet taulujen välillä
+- [x] Viitteet taulujen välillä
+- [ ] Linkki kaupunginosan lisäämiseen
+- [ ] Roolitaulu pois ja käyttäjälle admin-boolean
+- [ ] muokkauksessa tieto lomakkeeseen valmiiksi
+- [ ] käyttäjä liittyy johonkin
 
 #### Muut
 
 - [ ] kirjautuminen onnistui - ilmoitus
 - [ ] kahta samaa käyttäjänimeä ei voi olla
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
-- [ ] kaupunginosa taulussa väh. yksi rivi täydellisenä
+- [x] kaupunginosa taulussa väh. yksi rivi täydellisenä
+- [ ] kaupunginosia voi lisätä vain admin
 
 ## TO DO - viikko 4
 
-- [ ] sovelluksessa on ainakin 3 tietokantataulua joista jokainen on käytössä
+- [x] sovelluksessa on ainakin 3 tietokantataulua joista jokainen on käytössä
 - [ ] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
 - [ ] boostrap tms käytössä ulkoasun tyylittelyyn
 - [ ] toiminnallisuus on täydentynyt
