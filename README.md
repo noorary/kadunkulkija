@@ -10,6 +10,14 @@ tietokantasovellus.
 
 Sovellus löytyy Herokusta osoitteesta https://kadunkulkija.herokuapp.com/
 
+### Testitunnukset
+
+Sovellukseen voi kirjautua testitunnuksilla
+
+Käyttäjätyyppi | käyttäjätunnus | salasana
+-------------- | -------------- | --------
+user           | test           | tester123
+
 ### Projektin kuvaus
 
 Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin
@@ -45,7 +53,7 @@ Tietokantakaavio
 - [x] sovelluksessa on ainakin 2 tietokantataulua
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
 - [x] githubissa issuet päällä
-- [ ] Herokussa käytetään PostgreSQL-tietokannanhallintajärjestelmää
+- [x] Herokussa käytetään PostgreSQL-tietokannanhallintajärjestelmää
 - [x] Viitteet taulujen välillä
 - [ ] Linkki kaupunginosan lisäämiseen
 - [ ] Roolitaulu pois ja käyttäjälle admin-boolean
@@ -59,8 +67,8 @@ Tietokantakaavio
 - [ ] kahta samaa käyttäjänimeä ei voi olla
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [x] kaupunginosa taulussa väh. yksi rivi täydellisenä
-- [ ] kaupunginosia voi lisätä vain admin
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
+- [ ] pudotusvalikko toimintaan
 
 ## TO DO - viikko 4
 
