@@ -38,7 +38,7 @@ Tietokantakaavio
 #### Kurssin vaatimukset
 
 - [ ] lomakkeet validioivat syötetyn tiedon
-- [ ] WTForms käyttöön nimen muuttamiseen
+- [x] WTForms käyttöön nimen muuttamiseen
 - [x] sovelluksessa on mahdollisuus rekistöröitymiseen
 - [x] sovelluksessa on mahdollisuus kirjautumiseen
 - [ ] README:stä löytyy testitunnuksen tiedot
@@ -49,7 +49,6 @@ Tietokantakaavio
 - [x] Viitteet taulujen välillä
 - [ ] Linkki kaupunginosan lisäämiseen
 - [ ] Roolitaulu pois ja käyttäjälle admin-boolean
-- [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 - [ ] käyttäjä liittyy johonkin
 
 #### Muut
@@ -59,6 +58,7 @@ Tietokantakaavio
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [x] kaupunginosa taulussa väh. yksi rivi täydellisenä
 - [ ] kaupunginosia voi lisätä vain admin
+- [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 
 ## TO DO - viikko 4
 
