@@ -17,7 +17,7 @@ def street_form():
     #Kokeilu
     #districts_database = District.query.with_entities(District.id, District.name)
     #districts_field = [(x.id, x.name) for x in districts_database]
-    return render_template("streets/newstreet.html", form = StreetForm(districts_field))
+    return render_template("streets/newstreet.html", form = StreetForm())
 
 @app.route("/streets/", methods=["POST"])
 def street_add():
