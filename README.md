@@ -49,7 +49,7 @@ Tietokantakaavio
 - [x] WTForms käyttöön nimen muuttamiseen
 - [x] sovelluksessa on mahdollisuus rekistöröitymiseen
 - [x] sovelluksessa on mahdollisuus kirjautumiseen
-- [ ] README:stä löytyy testitunnuksen tiedot
+- [x] README:stä löytyy testitunnuksen tiedot
 - [x] sovelluksessa on ainakin 2 tietokantataulua
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
 - [x] githubissa issuet päällä
@@ -57,9 +57,8 @@ Tietokantakaavio
 - [x] Viitteet taulujen välillä
 - [ ] Linkki kaupunginosan lisäämiseen
 - [ ] Roolitaulu pois ja käyttäjälle admin-boolean
-    - [ ] käyttäjä-taulu päivitetty
+    - [x] käyttäjä-taulu päivitetty
     - [ ] tietokantakaavio päivitetty
-- [ ] käyttäjä liittyy johonkin
 
 #### Muut
 
@@ -69,6 +68,7 @@ Tietokantakaavio
 - [x] kaupunginosa taulussa väh. yksi rivi täydellisenä
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 - [ ] pudotusvalikko toimintaan
+- [ ] käyttäjä liittyy johonkin
 
 ## TO DO - viikko 4
 
