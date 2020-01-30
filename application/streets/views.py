@@ -3,6 +3,7 @@ from flask import redirect, render_template, request, url_for
 from flask_login import login_required
 from application.streets.models import Street
 from application.streets.forms import StreetForm
+from application.streets.forms import EditStreetForm
 
 @app.route("/streets", methods=["GET"])
 def streets_index():
@@ -25,7 +26,6 @@ def street_add():
 
     new_street = Street(form.name.data)
     new_street.district_id = form.district.data
-    print(form.district.data)
 
     db.session().add(new_street)
     db.session().commit()
@@ -33,23 +33,29 @@ def street_add():
     return redirect(url_for("streets_index"))
 
 @app.route("/streets/edit/<street_id>", methods=["GET"])
-@login_required
+# @login_required
 def edit_street_name(street_id):
 
-    return render_template("streets/editname.html", street = Street.query.get(street_id))
+    form = EditStreetForm(request.form)
+
+    return render_template("streets/editname.html", street = Street.query.get(street_id), form=form)
 
 
 @app.route("/streets/edit/", methods=["GET"])
-@login_required
+# @login_required
 def street_edit():
+
+
 
     return render_template("streets/editlist.html/", streets = Street.query.all() )
 
 @app.route("/streets/edit/ready/<street_id>", methods=["POST"])
 def set_new_name(street_id):
 
+    form = EditStreetForm(request.form)
+
     s = Street.query.get(street_id)
-    new = request.form.get("newname")
+    new = form.newname.data
 
     s.name = new
     db.session().commit()

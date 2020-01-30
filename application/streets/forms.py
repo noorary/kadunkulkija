@@ -13,3 +13,9 @@ class StreetForm(FlaskForm):
 
 	class Meta:
 	    csrf = False
+
+class EditStreetForm(FlaskForm):
+	newname = StringField("New streetname")
+
+	class Meta:
+		csrf: False

@@ -5,7 +5,21 @@
 <p> Give new name for the street </p>
 
 <form method="POST" action="{{ url_for('set_new_name', street_id=street.id) }}">
-    <input type="text" name="newname"/>
-    <input type="submit" value="Update name"/>
+    <table>
+        <tr>
+            <td>
+            {{ form.newname.label }}
+        </td>
+        <td>
+            {{ form.newname }}
+        </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Update name"/>
+            </td>
+        </tr>
+    </table>
+    
 </form>
 {% endblock %}
