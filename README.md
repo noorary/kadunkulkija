@@ -49,6 +49,8 @@ Tietokantakaavio
 - [x] Viitteet taulujen välillä
 - [ ] Linkki kaupunginosan lisäämiseen
 - [ ] Roolitaulu pois ja käyttäjälle admin-boolean
+    - [ ] käyttäjä-taulu päivitetty
+    - [ ] tietokantakaavio päivitetty
 - [ ] käyttäjä liittyy johonkin
 
 #### Muut
