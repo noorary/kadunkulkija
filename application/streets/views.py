@@ -5,6 +5,8 @@ from application.streets.models import Street
 from application.streets.forms import StreetForm
 from application.streets.forms import EditStreetForm
 
+from application.districts.models import District
+
 @app.route("/streets", methods=["GET"])
 def streets_index():
 	return render_template("/streets/list.html", streets = Street.query.all())
@@ -12,7 +14,10 @@ def streets_index():
 @app.route("/streets/newstreet/")
 @login_required
 def street_form():
-    return render_template("streets/newstreet.html", form = StreetForm())
+    #Kokeilu
+    #districts_database = District.query.with_entities(District.id, District.name)
+    #districts_field = [(x.id, x.name) for x in districts_database]
+    return render_template("streets/newstreet.html", form = StreetForm(districts_field))
 
 @app.route("/streets/", methods=["POST"])
 def street_add():
