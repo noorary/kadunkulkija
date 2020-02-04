@@ -41,7 +41,7 @@ Tietokantakaavio
 [Käyttötapaukset](https://github.com/noorarytila/kadunkulkija/blob/master/dokumentaatio/kayttotapaukset.md)
 
 
-### TO DO - viikko 3
+## TO DO - viikko 3
 
 #### Kurssin vaatimukset
 
@@ -59,6 +59,17 @@ Tietokantakaavio
 - [ ] Roolitaulu pois ja käyttäjälle admin-boolean
     - [x] käyttäjä-taulu päivitetty
     - [ ] tietokantakaavio päivitetty
+- [ ] Korjaa pudotusvalikon haku
+
+
+## TO DO - viikko 4
+
+#### Kurssin vaatimukset
+
+- [x] sovelluksessa on ainakin 3 tietokantataulua joista jokainen on käytössä
+- [ ] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
+- [ ] boostrap tms käytössä ulkoasun tyylittelyyn
+- [ ] toiminnallisuus on täydentynyt
 
 #### Muut
 
@@ -69,13 +80,6 @@ Tietokantakaavio
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 - [ ] pudotusvalikko toimintaan
 - [ ] käyttäjä liittyy johonkin
-
-## TO DO - viikko 4
-
-- [x] sovelluksessa on ainakin 3 tietokantataulua joista jokainen on käytössä
-- [ ] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
-- [ ] boostrap tms käytössä ulkoasun tyylittelyyn
-- [ ] toiminnallisuus on täydentynyt
 
 ## TO DO - viikko 5
 
