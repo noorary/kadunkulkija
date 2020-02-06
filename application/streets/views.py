@@ -38,7 +38,7 @@ def street_add():
     return redirect(url_for("streets_index"))
 
 @app.route("/streets/edit/<street_id>", methods=["GET"])
-# @login_required
+@login_required
 def edit_street_name(street_id):
 
     form = EditStreetForm(request.form)
@@ -47,7 +47,7 @@ def edit_street_name(street_id):
 
 
 @app.route("/streets/edit/", methods=["GET"])
-# @login_required
+@login_required
 def street_edit():
 
 
@@ -55,6 +55,7 @@ def street_edit():
     return render_template("streets/editlist.html/", streets = Street.query.all() )
 
 @app.route("/streets/edit/ready/<street_id>", methods=["POST"])
+@login_required
 def set_new_name(street_id):
 
     form = EditStreetForm(request.form)
