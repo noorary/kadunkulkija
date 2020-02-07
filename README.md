@@ -48,7 +48,7 @@ Tietokantakaavio
 - [ ] lomakkeet validioivat syötetyn tiedon
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
     - [ ] Käyttäjä voi luoda suunnitelmia
-- [ ] Linkki kaupunginosan lisäämiseen
+- [x] Linkki kaupunginosan lisäämiseen
 
 
 

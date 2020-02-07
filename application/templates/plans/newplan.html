@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+  
+{% block body %}
+<form method="POST" action="{{ url_for('plan_add') }}">
+  <div class="form-row">
+    <div class="form-group col-sm-3">
+      <label for="Street"> {{ form.street.label }} </label>
+    </div>
+    <div class="form-group col-sm-3">
+        {{ form.street(class="form-control") }}
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-sm-3">
+      <label for="date">{{ form.date.label }}</label>
+    </div>
+    <div class="form-group col-sm-3">
+      {{ form.date }}
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-group col-sm-5">
+      <input type="submit" value="Add a new plan">
+    </div>
+    
+  </div>
+</form>
+{% endblock %}

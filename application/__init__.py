@@ -19,14 +19,17 @@ from application import views
 
 from application.districts import models
 from application.streets import models
+from application.plans import models
 
 from application.streets import views
 from application.districts import views
+from application.plans import views
 
 from application.auth import models
 from application.auth import views
 
-from application.auth.models import User#/home/nrytila/kadunkulkija/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py
+
+from application.auth.models import User
 
 from os import urandom
 app.config["SECRET_KEY"] = urandom(32)

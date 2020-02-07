@@ -19,3 +19,4 @@ class EditStreetForm(FlaskForm):
 
 	class Meta:
 		csrf: False
+		

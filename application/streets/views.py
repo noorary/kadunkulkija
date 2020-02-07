@@ -25,10 +25,7 @@ def street_add():
 
     if not form.validate():
         return render_template("streets/newstreet.html", form = form)
-
     
-    
-
     new_street = Street(form.name.data)
     new_street.district_id = form.district.data
 
