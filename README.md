@@ -46,20 +46,10 @@ Tietokantakaavio
 #### Kurssin vaatimukset
 
 - [ ] lomakkeet validioivat syötetyn tiedon
-- [x] WTForms käyttöön nimen muuttamiseen
-- [x] sovelluksessa on mahdollisuus rekistöröitymiseen
-- [x] sovelluksessa on mahdollisuus kirjautumiseen
-- [x] README:stä löytyy testitunnuksen tiedot
-- [x] sovelluksessa on ainakin 2 tietokantataulua
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
-- [x] githubissa issuet päällä
-- [x] Herokussa käytetään PostgreSQL-tietokannanhallintajärjestelmää
-- [x] Viitteet taulujen välillä
+    - [ ] Käyttäjä voi luoda suunnitelmia
 - [ ] Linkki kaupunginosan lisäämiseen
-- [ ] Roolitaulu pois ja käyttäjälle admin-boolean
-    - [x] käyttäjä-taulu päivitetty
-    - [ ] tietokantakaavio päivitetty
-- [ ] Korjaa pudotusvalikon haku
+
 
 
 ## TO DO - viikko 4
@@ -68,18 +58,21 @@ Tietokantakaavio
 
 - [x] sovelluksessa on ainakin 3 tietokantataulua joista jokainen on käytössä
 - [ ] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
-- [ ] boostrap tms käytössä ulkoasun tyylittelyyn
+- [x] boostrap tms käytössä ulkoasun tyylittelyyn
 - [ ] toiminnallisuus on täydentynyt
+- [ ] ei injektiomahdollisuuksia
 
 #### Muut
 
 - [ ] kirjautuminen onnistui - ilmoitus
 - [ ] kahta samaa käyttäjänimeä ei voi olla
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
-- [x] kaupunginosa taulussa väh. yksi rivi täydellisenä
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 - [ ] pudotusvalikko toimintaan
 - [ ] käyttäjä liittyy johonkin
+- [ ] tyylittele sivuja
+- [ ] Katujen listaukseen näkyviin myös kaupungin osa
+- [ ] Päivitä tietokantakaavio (admin-rooli)
 
 ## TO DO - viikko 5
 
