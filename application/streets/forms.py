@@ -6,10 +6,8 @@ from application.streets.models import Street
 
 class StreetForm(FlaskForm):
 	name = StringField("Street name", [validators.Length(min=5)])
-	districts_database = District.query.with_entities(District.id, District.name)
-	districts_field = [(x.id, x.name) for x in districts_database]
 
-	district = SelectField("District", choices=districts_field, coerce=int)
+	district = SelectField('District:', coerce=int, render_kw={"class": "chosen-select", "data-placeholder":"..."})
 
 	class Meta:
 	    csrf = False

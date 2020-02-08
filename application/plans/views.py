@@ -1,36 +1,38 @@
 from application import app, db
 from flask import redirect, render_template, request, url_for
-from flask_login import login_required
+from flask_login import login_required, current_user
 from application.plans.models import Plan
 from application.plans.forms import PlanForm
+from application.streets.models import Street
 
-@app.route("/myplans", methods=["GET"])
-@login_required
+@app.route("/myplans", methods=["GET", "POST"])
+ #@login_required
 def myplan_index():
     return render_template("/plans/plans.html")
 
-@app.route("/myplans/", methods=["POST", "GET"])
+@app.route("/myplans/newplan", methods=["POST", "GET"])
 # @login_required
 def plan_add():
 
-    if request.method == 'GET':
-        return render_template("/plans/newplan.html", form = PlanForm())
+    streets = Street.query.all()
+    street_list = [(s.id, s.name) for s in streets]
 
-    else:
+    form = PlanForm(request.form)
+    form.street.choices = street_list
 
-        form = PlanForm(request.form)
+    if form.validate_on_submit():
 
-        p = Plan(form.date.data)
-        p.account_id = current_user.id 
-        # p.street_id = form.street.data
-        p.completed = false
+        new_plan = Plan(form.date.data)
+        new_plan.account_id = current_user.id 
+        new_plan.street_id = form.street.id
 
-        db.session.add(p)
-        db.session.commit()
+        db.session().add(new_plan)
+        db.session().commit()
 
         return redirect(url_for("myplan_index"))
+    
+    return render_template("plans/newplan.html", form = form)
 
-        
 
 
     

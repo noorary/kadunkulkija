@@ -11,28 +11,29 @@ from application.districts.models import District
 def streets_index():
 	return render_template("/streets/list.html", streets = Street.query.all())
 
-@app.route("/streets/newstreet/")
+@app.route("/streets/newstreet/", methods=("GET", "POST"))
 @login_required
 def street_form():
-    #Kokeilu
-    #districts_database = District.query.with_entities(District.id, District.name)
-    #districts_field = [(x.id, x.name) for x in districts_database]
-    return render_template("streets/newstreet.html", form = StreetForm())
 
-@app.route("/streets/", methods=["POST"])
-def street_add():
-    form  = StreetForm(request.form)
+    districts = District.query.all()
+    district_list = [(d.id, d.name) for d in districts]
 
-    if not form.validate():
-        return render_template("streets/newstreet.html", form = form)
+    form = StreetForm(request.form)
+    form.district.choices = district_list
+
+    if form.validate_on_submit():
+
+        new_street = Street(form.name.data)
+        new_street.district_id = form.district.data
+
+        db.session().add(new_street)
+        db.session().commit()
+
+        return redirect(url_for("streets_index"))
     
-    new_street = Street(form.name.data)
-    new_street.district_id = form.district.data
+    return render_template("streets/newstreet.html", form = form)
 
-    db.session().add(new_street)
-    db.session().commit()
-
-    return redirect(url_for("streets_index"))
+    
 
 @app.route("/streets/edit/<street_id>", methods=["GET"])
 @login_required

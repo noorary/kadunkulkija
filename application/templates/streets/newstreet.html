@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
   
 {% block body %}
-<form method="POST" action="{{ url_for('street_add') }}">
+<form method="POST" action="{{ url_for('street_form') }}">
   <div class="form-row">
     <div class="form-group col-sm-3">
       <label for="street"> {{ form.name.label }} </label>
@@ -15,7 +15,7 @@
       <label for="district">{{ form.district.label }}</label>
     </div>
     <div class="form-group col-sm-3">
-      {{ form.district(class="form-control") }}
+      {{ form.district }}
     </div>
   </div>
   {% if form.name.errors %}
