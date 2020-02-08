@@ -14,6 +14,7 @@ def myplan_index():
 # @login_required
 def plan_add():
 
+
     streets = Street.query.all()
     street_list = [(s.id, s.name) for s in streets]
 
@@ -21,16 +22,16 @@ def plan_add():
     form.street.choices = street_list
 
     if form.validate_on_submit():
-
-        new_plan = Plan(form.date.data)
+        new_plan = Plan(form.plandate.data, form.street.data)
         new_plan.account_id = current_user.id 
-        new_plan.street_id = form.street.id
+
 
         db.session().add(new_plan)
         db.session().commit()
 
         return redirect(url_for("myplan_index"))
-    
+
+
     return render_template("plans/newplan.html", form = form)
 
 
