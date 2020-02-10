@@ -16,8 +16,6 @@ def myplan_index():
 # @login_required
 def plan_add():
 
-    print('!!!?????????????')
-
     streets = Street.query.all()
     street_list = [(s.id, s.name) for s in streets]
 
@@ -36,7 +34,7 @@ def plan_add():
         new_plan.street_id = form.street.data
         new_plan.account_id = current_user.id
 
-        print(f'NEW PLAN: {new_plan}') 
+        # print(f'NEW PLAN: {new_plan}') 
 
         db.session().add(new_plan)
         db.session().commit()
@@ -47,11 +45,19 @@ def plan_add():
 def plan_set_completed(plan_id):
 
     p = Plan.query.get(plan_id)
-    t.completed = True
+    p.completed = True
     db.session().commit()
 
     return redirect(url_for("myplan_index"))
 
+@app.route("/myplans/delete/<plan_id>", methods=["POST"])
+def delete_plan(plan_id):
+
+    p = Plan.query.get(plan_id)
+    db.session.delete(p)
+    db.session.commit()
+
+    return redirect(url_for("myplan_index"))
 
     
 

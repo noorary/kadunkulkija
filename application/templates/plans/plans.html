@@ -4,11 +4,13 @@
 
 <h2>Here is your plans</h2>
 
-<table>
+<table class="table">
     <tr>
         <th> Date </th>
         <th> Street </th>
         <th> Completed </th>
+        <th> Set plan completed</th>
+        <th> Delete plan </th>
     </tr>
     {% for plan in plans %}
       {% if plan.account_id == current_user.id %}
@@ -16,9 +18,16 @@
         <td> {{ plan.plandate }}</td>
         <td> {{ plan.street.name }} </td>
         <td> {{ plan.completed }} </td>
-        <!-- <td>
-            <form method="POST" action="{{ url_for('plan_set_completed', plan_id=plan.id) }}"
-        </td> -->
+        <td>
+            <form method="POST" action="{{ url_for('plan_set_completed', plan_id=plan.id) }}">
+                <input type="submit" value="Complete!"/>
+            </form>
+        </td>
+        <td>
+            <form method="POST" action="{{ url_for('delete_plan', plan_id=plan.id) }}">
+                <input type="submit" value="Delete plan"/>
+            </form>
+        </td>
     </tr>
     {% endif %}
     {% endfor %}
