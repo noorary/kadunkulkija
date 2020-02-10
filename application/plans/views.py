@@ -5,15 +5,18 @@ from application.plans.models import Plan
 from application.plans.forms import PlanForm
 from application.streets.models import Street
 
-@app.route("/myplans", methods=["GET", "POST"])
+@app.route("/myplans", methods=["GET"])
  #@login_required
 def myplan_index():
-    return render_template("/plans/plans.html")
+    
+    return render_template("/plans/plans.html", plans = Plan.query.all())
+    
 
 @app.route("/myplans/newplan", methods=["POST", "GET"])
 # @login_required
 def plan_add():
 
+    print('!!!?????????????')
 
     streets = Street.query.all()
     street_list = [(s.id, s.name) for s in streets]
@@ -21,10 +24,19 @@ def plan_add():
     form = PlanForm(request.form)
     form.street.choices = street_list
 
-    if form.validate_on_submit():
-        new_plan = Plan(form.plandate.data, form.street.data)
-        new_plan.account_id = current_user.id 
+    if request.method == "GET":
+        return render_template("plans/newplan.html", form = form)
 
+    if request.method == "POST":
+
+        new_plan = Plan()
+
+        new_plan.completed = False
+        new_plan.date = form.plandate.data
+        new_plan.street_id = form.street.data
+        new_plan.account_id = current_user.id
+
+        print(f'NEW PLAN: {new_plan}') 
 
         db.session().add(new_plan)
         db.session().commit()
@@ -32,7 +44,7 @@ def plan_add():
         return redirect(url_for("myplan_index"))
 
 
-    return render_template("plans/newplan.html", form = form)
+    
 
 
 

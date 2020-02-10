@@ -13,9 +13,9 @@
     {% for plan in plans %}
       {% if plan.account_id == current_user.id %}
     <tr>
-        <td> plan.date </td>
-        <td> plan.street </td>
-        <td> plan.completed </td>
+        <td> {{ plan.date }}</td>
+        <td> {{ plan.street.name }} </td>
+        <td> {{ plan.completed }} </td>
     </tr>
     {% endif %}
     {% endfor %}
@@ -24,7 +24,7 @@
 <form method="GET" action="{{ url_for('plan_add') }}"></form>
 
     <div class="form-group col-sm-5">
-        <input type="submit" value="Add a new plan">
+        <a href="/myplans/newplan"><input type="button" value="Add new plan"></a>
     </div>
 </form>
 

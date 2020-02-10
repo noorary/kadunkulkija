@@ -5,13 +5,13 @@ from datetime import datetime
 
 class Plan(Base):
 
-    plandate = db.Column(db.String(64),)
+    plandate = db.Column(db.Date)
     completed = db.Column(db.Boolean, default=False, nullable=False)
     
     street_id = db.Column(db.Integer, db.ForeignKey('street.id'), nullable=False)
     account_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
 
-    def __init__(self, date, completed): 
-        self.date = datetime
-        self.completed = False
+    #def __init__(self): 
+        # self.date = date
+        # self.completed = False
 		

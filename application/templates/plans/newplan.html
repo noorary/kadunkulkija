@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
   
 {% block body %}
-<form method="POST" action="{{ url_for('myplan_index') }}">
+<form method="POST" action="{{ url_for('plan_add') }}">
   <div class="form-row">
     <div class="form-group col-sm-3">
       <label for="Street"> {{ form.street.label }} </label>
