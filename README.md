@@ -47,7 +47,7 @@ Tietokantakaavio
 
 - [ ] lomakkeet validioivat syötetyn tiedon
 - [ ] ainakin yhteen tietokantataulun tietoihin liittyy täysi CRUD-toiminnallisuus
-    - [ ] Käyttäjä voi luoda suunnitelmia
+    - [x] Käyttäjä voi luoda suunnitelmia
 - [x] Linkki kaupunginosan lisäämiseen
 
 
@@ -59,7 +59,7 @@ Tietokantakaavio
 - [x] sovelluksessa on ainakin 3 tietokantataulua joista jokainen on käytössä
 - [ ] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
 - [x] boostrap tms käytössä ulkoasun tyylittelyyn
-- [ ] toiminnallisuus on täydentynyt
+- [x] toiminnallisuus on täydentynyt
 - [ ] ei injektiomahdollisuuksia
 
 #### Muut
@@ -68,10 +68,11 @@ Tietokantakaavio
 - [ ] kahta samaa käyttäjänimeä ei voi olla
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
-- [ ] pudotusvalikko toimintaan
 - [ ] käyttäjä liittyy johonkin
 - [ ] tyylittele sivuja
 - [ ] Katujen listaukseen näkyviin myös kaupungin osa
+- [ ] Admin voi poistaa kadun listauksesta
+- [ ] Kadun nimeä voi muokata suoraan listauksesta
 - [ ] Päivitä tietokantakaavio (admin-rooli)
 
 ## TO DO - viikko 5
