@@ -13,9 +13,12 @@
     {% for plan in plans %}
       {% if plan.account_id == current_user.id %}
     <tr>
-        <td> {{ plan.date }}</td>
+        <td> {{ plan.plandate }}</td>
         <td> {{ plan.street.name }} </td>
         <td> {{ plan.completed }} </td>
+        <!-- <td>
+            <form method="POST" action="{{ url_for('plan_set_completed', plan_id=plan.id) }}"
+        </td> -->
     </tr>
     {% endif %}
     {% endfor %}

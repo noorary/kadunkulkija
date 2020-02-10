@@ -32,7 +32,7 @@ def plan_add():
         new_plan = Plan()
 
         new_plan.completed = False
-        new_plan.date = form.plandate.data
+        new_plan.plandate = form.plandate.data
         new_plan.street_id = form.street.data
         new_plan.account_id = current_user.id
 
@@ -42,6 +42,15 @@ def plan_add():
         db.session().commit()
 
         return redirect(url_for("myplan_index"))
+
+@app.route("/myplans/<plan_id>/", methods=["POST"])
+def plan_set_completed(plan_id):
+
+    p = Plan.query.get(plan_id)
+    t.completed = True
+    db.session().commit()
+
+    return redirect(url_for("myplan_index"))
 
 
     
