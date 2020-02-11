@@ -17,6 +17,7 @@ Sovellukseen voi kirjautua testitunnuksilla
 Käyttäjätyyppi | käyttäjätunnus | salasana
 -------------- | -------------- | --------
 user           | test           | tester123
+admin          | admin          | admin123
 
 ### Projektin kuvaus
 
@@ -45,9 +46,9 @@ Tietokantakaavio
 #### Kurssin vaatimukset
 
 - [ ] lomakkeet validioivat syötetyn tiedon
-- [ ] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
-    - [ ] Users who have completed at least 5 plans
-    - [ ] Streets that are part of 1 ore more plans
+- [x] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
+    - [x] Users who have completed at least 5 plans
+    - [ ] Streets that are part of 1 or more plans
 - [ ] ei injektiomahdollisuuksia
 
 
@@ -62,6 +63,9 @@ Tietokantakaavio
 - [ ] käyttöohje
 
 #### Muut
+
+- [ ] kirjautuneelle käyttäjälle linkki omiin suunnitelmiin
+- [ ] dropdown valikko navbariin
 
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
