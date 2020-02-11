@@ -39,7 +39,7 @@ class User(Base):
     def find_users_with_fiveormore_completed():
         stmt = text("SELECT Account.id, Account.name FROM Account"
                     " LEFT JOIN Plan ON Plan.account_id = Account.id"
-                    " WHERE (Plan.completed = t)"
+                    " WHERE (Plan.completed = 1)"
                     " GROUP BY Account.id"
                     " HAVING COUNT(Plan.id) >= 5")
         
