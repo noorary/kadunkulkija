@@ -1,6 +1,8 @@
 from application import db
 from application.models import Base 
 
+from sqlalchemy.sql import text
+
 class User(Base):
 
     __tablename__ = "account"
@@ -32,3 +34,20 @@ class User(Base):
 
     # def roles(self):
     #     return ["ADMIN", "USER"]
+
+    @staticmethod
+    def find_users_with_fiveormore_completed():
+        stmt = text("SELECT Account.id, Account.name FROM Account"
+                    " LEFT JOIN Plan ON Plan.account_id = Account.id"
+                    " WHERE (Plan.completed = 1)"
+                    " GROUP BY Account.id"
+                    " HAVING COUNT(Plan.id) >= 5")
+        
+        res = db.engine.execute(stmt)
+
+        response = []
+
+        for row in res:
+            response.append({"id":row[0], "name":row[1]})
+
+        return response

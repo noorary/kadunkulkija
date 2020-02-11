@@ -13,4 +13,31 @@
     To start planning and visiting, login or sign up!
   </h4>
 
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+
+{% if has_visited is defined %}
+<h2>
+  The following users have visited 5 or more streets!
+</h2>
+
+<ul>
+  {% for user in has_visited %}
+  <li>
+     Username: {{user.name}}
+  </li>
+  {% endfor %}
+</ul>
+
+{% endif %}
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+
 {% endblock %}
