@@ -39,9 +39,12 @@ def street_form():
 @login_required
 def edit_street_name(street_id):
 
+    name = Street.query.filter_by(id = street_id)
     form = EditStreetForm(request.form)
 
-    return render_template("streets/editname.html", street = Street.query.get(street_id), form=form)
+    
+
+    return render_template("streets/editname.html", street = Street.query.get(street_id), form=form, name = name)
 
 
 @app.route("/streets/edit/", methods=["GET"])

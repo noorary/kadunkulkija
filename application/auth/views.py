@@ -12,7 +12,6 @@ def auth_login():
         return render_template("auth/loginform.html", form = LoginForm())
 
     form = LoginForm(request.form)
-    # TO DO validoinnit
 
     user = User.query.filter_by(username=form.username.data, password=form.password.data).first()
     if not user:
@@ -30,16 +29,19 @@ def auth_logout():
 
 @app.route("/auth/signup", methods = ["GET", "POST"])
 def auth_signup():
-    if request.method == "GET":
-      return render_template("auth/signupform.html", form = SignupForm())
 
     form = SignupForm(request.form)
 
     form = SignupForm(request.form)
 
-    u = User(form.name.data, form.username.data, form.password.data)
+    if form.validate_on_submit():
 
-    db.session().add(u)
-    db.session().commit()
+        u = User(form.name.data, form.username.data, form.password.data)
+        
+        db.session().add(u)
+        db.session().commit()
 
-    return redirect(url_for("auth_login"))
+        return redirect(url_for("auth_login"))
+
+    return render_template("auth/signupform.html", form = SignupForm())
+    

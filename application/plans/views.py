@@ -27,14 +27,13 @@ def plan_add():
 
     if request.method == "POST":
 
+
         new_plan = Plan()
 
         new_plan.completed = False
         new_plan.plandate = form.plandate.data
         new_plan.street_id = form.street.data
         new_plan.account_id = current_user.id
-
-        # print(f'NEW PLAN: {new_plan}') 
 
         db.session().add(new_plan)
         db.session().commit()

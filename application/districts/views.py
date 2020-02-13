@@ -18,7 +18,7 @@ def district_add():
     form = DistrictForm(request.form)
 
     if not form.validate():
-        return render_template("districts/newdistricts.html", form = form)
+        return render_template("districts/newdistrict.html", form = form)
 
     d = District(form.name.data)
 

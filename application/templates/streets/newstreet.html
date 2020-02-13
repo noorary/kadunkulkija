@@ -19,8 +19,10 @@
     </div>
   </div>
   {% if form.name.errors %}
-    {% for error in form.street.error %}
-      {{ error }}
+    {% for field, errors in form.errors.items() %}
+    <div class="alert alert-error">
+      {{ form[field].label }}: {{ ', '.join(errors) }}
+    </div>
     {% endfor %}
   {% endif %} 
   <div class="form-group">

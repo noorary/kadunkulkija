@@ -35,5 +35,13 @@
 	<input type="submit" value="Sign up!"/>
       </td>
     </tr>
+
+  {% if form.name.errors%}
+        {% for field, errors in form.errors.items() %}
+        <div class="alert alert-error">
+          {{ form[field].label }}: {{ ', '.join(errors) }}
+        </div>
+        {% endfor %}
+    {% endif %}
 </form>
 {% endblock %}
