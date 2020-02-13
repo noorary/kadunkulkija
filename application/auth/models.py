@@ -33,8 +33,6 @@ class User(Base):
     def is_authenticated(self):
         return True
 
-    # def roles(self):
-    #     return ["ADMIN", "USER"]
 
     @staticmethod
     def find_users_with_fiveormore_completed(completed='true'):

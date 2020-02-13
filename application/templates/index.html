@@ -3,15 +3,13 @@
 {% block body %}
 
   <h1>Welcome to Kadunkulkija!</h1>
-  <h6>
-    Kadunkulkija is an app where you can create plans to visit streets in Helsinki!
-  </h6>
-  <h6> There are 
-    over 4500 streets in Helsinki, so... what a fun way to spend your life visiting them!
-  </h6>
-  <h4>
-    To start planning and visiting, login or sign up!
-  </h4>
+  <p style="font-size: 4;"> Kadunkulkija is an app where you can create plans to visit streets in Helsinki! <br>  
+    There are 
+    over 4500 streets in Helsinki, so... what a fun way to spend your life visiting them!</p>
+
+  <h2>
+    To start planning and visiting, <a href= "{{ url_for('auth_login')}}">login</a> or <a href= "{{ url_for('auth_signup') }}">sign up!</a>!
+  </h2>
 
   <p></p>
   <p></p>
@@ -19,9 +17,9 @@
   <p></p>
 
 {% if has_visited is defined %}
-<h2>
+<h3>
   The following users have visited 5 or more streets!
-</h2>
+</h3>
 
 <ul>
   {% for user in has_visited %}

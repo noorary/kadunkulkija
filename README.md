@@ -57,7 +57,7 @@ Tietokantakaavio
 
 - [ ] autorisointi
 - [ ] käytettävyyden viilausta
-- [ ] toiminnallisuus on täydentynyt
+- [x] toiminnallisuus on täydentynyt
 - [ ] asennusohje
 - [ ] käyttöohje
 
@@ -124,7 +124,7 @@ Tietokantakaavio
     - [ ] sivut ovat loogisesti rakennetut ja helposti löydettävissä
         - [x] etusivu sovelluksen juuressa
         - [ ] järkevä yleisvalikko
-    - [ ] käyttäjän syötteet validioidaan
+    - [x] käyttäjän syötteet validioidaan
     - [ ] virhetilanteissa ymmärrettävät virheviestit
     - [ ] ACheckerin ilmoittamat ongelmat korjattu
     - [ ] sovellus on käytettävä myös isoilla tietomäärillä

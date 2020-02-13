@@ -1,6 +1,7 @@
-from application import app, db
 from flask import redirect, render_template, request, url_for
-from flask_login import login_required
+from flask_login import current_user, login_required
+
+from application import app, db #, login_required
 from application.districts.models import District
 from application.districts.forms import DistrictForm
 
