@@ -37,15 +37,15 @@ class User(Base):
     #     return ["ADMIN", "USER"]
 
     @staticmethod
-    def find_users_with_fiveormore_completed():
+    def find_users_with_fiveormore_completed(completed='true'):
 
         if os.environ.get("HEROKU"):
 
             stmt = text("SELECT Account.id, Account.name FROM Account"
                         " LEFT JOIN Plan ON Plan.account_id = Account.id"
-                        " WHERE (Plan.completed = 'true')"
+                        " WHERE (Plan.completed = :completed )"
                         " GROUP BY Account.id"
-                        " HAVING COUNT(Plan.id) >= 5")
+                        " HAVING COUNT(Plan.id) >= 5").params(completed=completed)
         else: 
 
             stmt = text("SELECT Account.id, Account.name FROM Account"
