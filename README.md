@@ -48,7 +48,6 @@ Tietokantakaavio
 - [ ] lomakkeet validioivat syötetyn tiedon
 - [x] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
     - [x] Users who have completed at least 5 plans
-    - [ ] Streets that are part of 1 or more plans
 - [ ] ei injektiomahdollisuuksia
 
 
@@ -145,10 +144,12 @@ Tietokantakaavio
 
 - [ ] arvosana 5 minimivaatimukset
     - [x] vähintään 3 tietokantataulua (+ liitostaulut)
-    - [ ] käyttäjä liittyy muuhunkin kuin kirjautumiseen (suunnitelmat)
+    - [x] käyttäjä liittyy muuhunkin kuin kirjautumiseen (suunnitelmat)
     - [ ] vähintään kahdesta tietokohtaasta täysi CRUD (suunnitelmat, käyttäjän tiedot?)
     - [ ] yksi tai useampi monesta moneen suhde
     - [ ] vähintään 2 monimutkaisempaa yhteenvetokyselyä
+        - [x] Users who have completed at least 5 plans
+        - [ ] Streets that are part of 1 or more plans
 
 
 ## TO DO - muuta
