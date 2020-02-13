@@ -34,9 +34,6 @@ def auth_signup():
       return render_template("auth/signupform.html", form = SignupForm())
 
     form = SignupForm(request.form)
-    # TO DO validioinnit
-
-    # TO DO lisää uuden käyttäjän tiedot tietokantaan
 
     form = SignupForm(request.form)
 
@@ -45,7 +42,4 @@ def auth_signup():
     db.session().add(u)
     db.session().commit()
 
-
-    # TO DO kahta samaa käyttäjänimeä ei voi olla
-    # TO DO ilmoitetaan rekistöröitymisen onnistumisesta
     return redirect(url_for("auth_login"))
