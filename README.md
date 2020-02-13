@@ -56,7 +56,7 @@ Tietokantakaavio
 #### Kurssin vaatimukset
 
 - [ ] autorisointi
-- [ ] käytettävyyden viilausta
+- [x] käytettävyyden viilausta
 - [x] toiminnallisuus on täydentynyt
 - [ ] asennusohje
 - [ ] käyttöohje
