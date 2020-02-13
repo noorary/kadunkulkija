@@ -45,10 +45,10 @@ Tietokantakaavio
 
 #### Kurssin vaatimukset
 
-- [ ] lomakkeet validioivat syötetyn tiedon
+- [x] lomakkeet validioivat syötetyn tiedon
 - [x] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
     - [x] Users who have completed at least 5 plans
-- [ ] ei injektiomahdollisuuksia
+- [x] ei injektiomahdollisuuksia
 
 
 ## TO DO - viikko 5
