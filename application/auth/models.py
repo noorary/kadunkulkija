@@ -2,6 +2,7 @@ from application import db
 from application.models import Base 
 
 from sqlalchemy.sql import text
+import os
 
 class User(Base):
 
@@ -37,12 +38,22 @@ class User(Base):
 
     @staticmethod
     def find_users_with_fiveormore_completed():
-        stmt = text("SELECT Account.id, Account.name FROM Account"
-                    " LEFT JOIN Plan ON Plan.account_id = Account.id"
-                    " WHERE (Plan.completed = 'true' OR 1)"
-                    " GROUP BY Account.id"
-                    " HAVING COUNT(Plan.id) >= 5")
-        
+
+        if os.environ.get("HEROKU"):
+
+            stmt = text("SELECT Account.id, Account.name FROM Account"
+                        " LEFT JOIN Plan ON Plan.account_id = Account.id"
+                        " WHERE (Plan.completed = 'true')"
+                        " GROUP BY Account.id"
+                        " HAVING COUNT(Plan.id) >= 5")
+        else: 
+
+            stmt = text("SELECT Account.id, Account.name FROM Account"
+                        " LEFT JOIN Plan ON Plan.account_id = Account.id"
+                        " WHERE (Plan.completed = 1)"
+                        " GROUP BY Account.id"
+                        " HAVING COUNT(Plan.id) >= 5")
+                        
         res = db.engine.execute(stmt)
 
         response = []
