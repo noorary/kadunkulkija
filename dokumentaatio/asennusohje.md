@@ -50,7 +50,7 @@ ottaaksesi käyttöön Flask-kirjaston.
 Projektin riippuvuudet saa asennettua kloonatun projektin mukana tulleesta tiedostosta `requirements.txt`
 Suorita komento
 ```
-$ pip install -requirements.txt
+$ pip install -r requirements.txt
 ```
 ### 5. Sovelluksen käynnistäminen 
 
