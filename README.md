@@ -6,6 +6,11 @@ Tämä sovellus on toteutettu keväällä 2020 Helsingin yliopiston
 tietojenkäsittelytieteen kandiohjelman kurssilla Aineopintojen harjoitustyö:
 tietokantasovellus.
 
+[Asennusohje](https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/asennusohje.md)
+[Käyttöohje](https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/kayttoohje.md)
+[Tietokantakaavio](https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/kadunkulkija.png)
+[Käyttötapaukset](https://github.com/noorarytila/kadunkulkija/blob/master/dokumentaatio/kayttotapaukset.md)
+
 ### Heroku
 
 Sovellus löytyy Herokusta osoitteesta https://kadunkulkija.herokuapp.com/
@@ -21,9 +26,7 @@ admin          | admin          | admin123
 
 ### Projektin kuvaus
 
-Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin
-kaupunginosat ja kadut. Käyttäjä voi luoda omia listoja esimerkiksi
-suosikkikaduistaan ja pitää kirjaa missä kaikilla kaduilla on käynyt.
+Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin kadut ja kaupunginosat.
 
 Käyttäjä voi luoda sovellukseen suunnitelman, johon lisätään päivämäärä ja katu, jossa on tarkoitus vierailla.
 Vierailun jälkeen katu voidaan merkitä käydyksi. Käyttäjä voi luoda, tarkastella, muokata ja 
@@ -32,23 +35,11 @@ poistaa suunnitelmia.
 Käyttäjät voivat lisätä kaupunginosia ja katuja sovellukseen. Admin-käyttäjät voivat päivittää katujen ja kaupunginosien tietoja
 sekä poistaa niitä.  
 
-
 ### Dokumentaatio
 
 Tietokantakaavio
 
 ![Tietokantakaavio](https://raw.githubusercontent.com/noorarytila/kadunkulkija/master/dokumentaatio/kadunkulkija.png)
-
-[Käyttötapaukset](https://github.com/noorarytila/kadunkulkija/blob/master/dokumentaatio/kayttotapaukset.md)
-
-## TO DO - viikko 4
-
-#### Kurssin vaatimukset
-
-- [x] lomakkeet validioivat syötetyn tiedon
-- [x] sovelluksessa on ainakin yksi monimutkaisempi yhteenvetokysely jonka tulokset näytetään käyttäjälle
-    - [x] Users who have completed at least 5 plans
-- [x] ei injektiomahdollisuuksia
 
 
 ## TO DO - viikko 5
@@ -58,27 +49,33 @@ Tietokantakaavio
 - [ ] autorisointi
 - [x] käytettävyyden viilausta
 - [x] toiminnallisuus on täydentynyt
-- [ ] asennusohje
-- [ ] käyttöohje
+- [x] asennusohje
+- [x] käyttöohje
 
-#### Muut
+#### Yleiset to-do
 
 - [ ] kirjautuneelle käyttäjälle linkki omiin suunnitelmiin
 - [ ] dropdown valikko navbariin
+- [ ] Katujen listaukseen näkyviin myös kaupungin osa
+- [ ] Admin voi poistaa kadun listauksesta
+- [ ] Kadun nimeä voi muokata suoraan listauksesta
 
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 
-- [ ] Katujen listaukseen näkyviin myös kaupungin osa
-- [ ] Admin voi poistaa kadun listauksesta
-- [ ] Kadun nimeä voi muokata suoraan listauksesta
-- [ ] Päivitä tietokantakaavio (admin-rooli)
+- [ ] kirjautuminen onnistui - ilmoitus
+- [ ] kahta samaa käyttäjänimeä ei voi olla
+- [ ] käyttäjä voi muokata omia tietojaan
+- [ ] tyylittele sivuja
 
 ## TO DO - viikko 6
 
 - [ ] toiminnallisuus on täydentynyt
 - [ ] ulkoasu, käytettävyys ja toiminnallisuus
 - [ ] dokumentaation päivittäminen ja lisääminen
+    - [ ] tietokantakaavion päivittäminen
+    - [ ] käyttötapausten päivittäminen
+    - [ ] muut dokumentaation osat, kts. kurssin arvoteluperusteet
 - [ ] koodikatselmointi
 
 ## TO DO - viimeinen viikko
@@ -92,9 +89,10 @@ Tietokantakaavio
 
 - [ ] dokumentaatio
     - [ ] aiheen kuvaus
-    - [ ] käyttöohje
-    - [ ] asennusohje
-    - [ ] rajoitteet (??)
+    - [ ] käyttöohje
+        - [ ] suunnitelmat
+    - [x] asennusohje
+    - [ ] rajoitteet 
     - [ ] puuttuvat ominaisuudet
     - [ ] user storyt
         - [ ] listaus käyttäjäryhmistä ja käyttötapauksista
@@ -130,6 +128,8 @@ Tietokantakaavio
     - [ ] sovellus on käytettävä myös isoilla tietomäärillä
         - [ ] tulosten sivutus
         - [ ] hakutoiminnallisuus
+    - [ ] sovellus on hyödyllinen (käyttötapaukset mahdolliset tehdä)
+    - [ ] tehokkuus: toivotut asiat voidaan tehdä ilman turhia välivaiheita
 
 - [ ] ylläpidettävyys
     - [ ] konfiguraatiot kehitysympäristölle
@@ -150,13 +150,3 @@ Tietokantakaavio
     - [ ] vähintään 2 monimutkaisempaa yhteenvetokyselyä
         - [x] Users who have completed at least 5 plans
         - [ ] Streets that are part of 1 or more plans
-
-
-## TO DO - muuta
-
-- [ ] kirjautuminen onnistui - ilmoitus
-- [ ] kahta samaa käyttäjänimeä ei voi olla
-- [ ] käyttäjä voi muokata omia tietojaan
-- [ ] tyylittele sivuja
-
-### Jatkokehitysideoita
