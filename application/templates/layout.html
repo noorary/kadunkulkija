@@ -22,6 +22,11 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{{ url_for('street_form') }} ">Add a street</a>
                 </li>
+                {% if current_user.is_authenticated %}
+                  <li>
+                    <a class="nav-link" href="{{ url_for('myplan_index') }}">My plans</a>
+                  </li>
+                {% endif %}
                 {% if current_user.admin == true %}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ url_for('district_form') }} ">Add a district</a>
