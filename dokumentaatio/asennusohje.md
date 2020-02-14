@@ -43,7 +43,7 @@ Tämän jälkeen suorita komento
 ```
 $ pip install Flask
 ```
-ottaaksesi käyttöön Flask-kirjaston
+ottaaksesi käyttöön Flask-kirjaston.
 
 ### 4. Riippuvuuksien asentaminen
 
