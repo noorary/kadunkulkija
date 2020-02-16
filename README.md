@@ -54,7 +54,7 @@ Tietokantakaavio
 
 #### Yleiset to-do
 
-- [ ] kirjautuneelle käyttäjälle linkki omiin suunnitelmiin
+- [x] kirjautuneelle käyttäjälle linkki omiin suunnitelmiin
 - [ ] dropdown valikko navbariin
 - [ ] Katujen listaukseen näkyviin myös kaupungin osa
 - [ ] Admin voi poistaa kadun listauksesta
@@ -88,7 +88,7 @@ Tietokantakaavio
 
 
 - [ ] dokumentaatio
-    - [ ] aiheen kuvaus
+    - [x] aiheen kuvaus
     - [ ] käyttöohje
         - [ ] suunnitelmat
     - [x] asennusohje
@@ -116,7 +116,7 @@ Tietokantakaavio
     - [ ] ei rikkinäisiä linkkejä
     - [ ] lomakkeet toimivat järkevillä syötteillä
     - [ ] sovellus toimii myös ei järkevillä syötteillä (validiointi joko palvelimella tai selaimella)
-    - [ ] tyyli on yhtenäinen ja käyttä tuntuu luontevalta
+    - [ ] tyyli on yhtenäinen ja käyttö tuntuu luontevalta
 
 - [ ] käytettävyys & saavutettavuus
     - [ ] sivut ovat loogisesti rakennetut ja helposti löydettävissä
