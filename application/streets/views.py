@@ -11,7 +11,7 @@ from application.districts.models import District
 def streets_index():
 	return render_template("/streets/list.html", streets = Street.query.all())
 
-@app.route("/streets/newstreet/", methods=("GET", "POST"))
+@app.route("/streets/newstreet/", methods=["GET", "POST"])
 @login_required
 def street_form():
 
@@ -68,3 +68,13 @@ def set_new_name(street_id):
     db.session().commit()
 
     return redirect(url_for("streets_index"))
+
+@app.route("/streets/delete/<street_id>", methods=["GET", "POST"])
+@login_required
+def delete_street(street_id):
+
+    s = Street.query.get(street_id)
+    db.session.delete(s)
+    db.session.commit()
+
+    return redirect(url_for('streets_index'))
