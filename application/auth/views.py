@@ -32,8 +32,6 @@ def auth_signup():
 
     form = SignupForm(request.form)
 
-    form = SignupForm(request.form)
-
     if form.validate_on_submit():
 
         u = User(form.name.data, form.username.data, form.password.data)
