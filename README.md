@@ -59,6 +59,10 @@ Tietokantakaavio
 - [x] Katujen listaukseen näkyviin myös kaupungin osa
 - [x] Kadun nimeä voi muokata suoraan listauksesta
 
+- [ ] "stats" omalle sivulleen 
+    - [ ] tulosten sivutus
+
+
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 
@@ -69,6 +73,7 @@ Tietokantakaavio
 
 ## TO DO - viikko 6
 
+- [ ] monesta moneen suhde
 - [ ] toiminnallisuus on täydentynyt
 - [ ] ulkoasu, käytettävyys ja toiminnallisuus
 - [ ] dokumentaation päivittäminen ja lisääminen
@@ -103,7 +108,7 @@ Tietokantakaavio
         - [ ] CREATE TABLE lauseet ja indeksien lisäykset
 
 - [ ] tietokannan toteutus
-    - [ ] ei sql-injektiomahdollisuuksia
+    - [x] ei sql-injektiomahdollisuuksia
     - [ ] isoissa listauksissa sivutus
     - [ ] käyttäjien syötteet validioidaan palvelimella
     - [ ] indeksien käyttö
@@ -150,4 +155,4 @@ Tietokantakaavio
     - [ ] yksi tai useampi monesta moneen suhde
     - [x] vähintään 2 monimutkaisempaa yhteenvetokyselyä
         - [x] Users who have completed at least 5 plans
-        - [ x Streets that are part of 1 or more plans
+        - [x] Streets that are part of 1 or more plans
