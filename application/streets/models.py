@@ -1,6 +1,8 @@
 from application import db
 from application.models import Base
 
+from sqlalchemy.sql import text
+
 class Street(Base):
 
 	__tablename__="street"
@@ -13,3 +15,19 @@ class Street(Base):
 
 	def __init__(self, name):
 		self.name = name
+
+
+	@staticmethod
+	def find_streets_in_many_plans():
+		stmt=text("SELECT Street.id, Street.name FROM Street"
+		" LEFT JOIN Plan ON Plan.street_id = Street.id"
+		" GROUP BY Street.id"
+		" HAVING COUNT(Plan.id) >= 1")
+
+		res = db.engine.execute(stmt)
+
+		response = []
+		for row in res:
+			response.append({"id":row[0], "name":row[1]})
+
+		return response

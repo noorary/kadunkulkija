@@ -1,7 +1,8 @@
 from flask import render_template
 from application import app
 from application.auth.models import User
+from application.streets.models import Street
 
 @app.route("/")
 def index():
-    return render_template("index.html", has_visited=User.find_users_with_fiveormore_completed())
+    return render_template("index.html", has_visited=User.find_users_with_fiveormore_completed(), many_plans=Street.find_streets_in_many_plans())
