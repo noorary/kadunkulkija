@@ -3,11 +3,13 @@
 {% block body %}
   <table>
     <tr>
-      <th>Streets</th>
+      <th>Street</th>
+      <th>District</th>
     </tr>
     {% for street in streets %}
     <tr>
       <td>{{ street.name }}</td>
+      <td>{{ street.district.name }}</td>
     </tr>
     {% endfor %}
   </table>
