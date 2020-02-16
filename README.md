@@ -55,10 +55,9 @@ Tietokantakaavio
 #### Yleiset to-do
 
 - [x] kirjautuneelle käyttäjälle linkki omiin suunnitelmiin
-- [ ] dropdown valikko navbariin
-- [ ] Katujen listaukseen näkyviin myös kaupungin osa
-- [ ] Admin voi poistaa kadun listauksesta
-- [ ] Kadun nimeä voi muokata suoraan listauksesta
+- [x] dropdown valikko navbariin
+- [x] Katujen listaukseen näkyviin myös kaupungin osa
+- [x] Kadun nimeä voi muokata suoraan listauksesta
 
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
@@ -145,8 +144,10 @@ Tietokantakaavio
 - [ ] arvosana 5 minimivaatimukset
     - [x] vähintään 3 tietokantataulua (+ liitostaulut)
     - [x] käyttäjä liittyy muuhunkin kuin kirjautumiseen (suunnitelmat)
-    - [ ] vähintään kahdesta tietokohtaasta täysi CRUD (suunnitelmat, käyttäjän tiedot?)
+    - [ ] vähintään kahdesta tietokohtaasta täysi CRUD 
+        - [x] suunnitelmat
+        - [ ] joku muu?
     - [ ] yksi tai useampi monesta moneen suhde
-    - [ ] vähintään 2 monimutkaisempaa yhteenvetokyselyä
+    - [x] vähintään 2 monimutkaisempaa yhteenvetokyselyä
         - [x] Users who have completed at least 5 plans
-        - [ ] Streets that are part of 1 or more plans
+        - [ x Streets that are part of 1 or more plans
