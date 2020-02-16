@@ -1,5 +1,5 @@
 from flask import Flask
-# from flask_migrate import Migrate
+from flask_migrate import Migrate
 app = Flask(__name__)
 
 from flask_sqlalchemy import SQLAlchemy
@@ -13,7 +13,7 @@ else:
     app.config["SQLALCHEMY_ECHO"] = True
 
 db = SQLAlchemy(app)
-# migrate = Migrate(app, db)
+migrate = Migrate(app, db)
 
 #login functionality
 
