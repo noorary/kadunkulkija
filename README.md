@@ -26,14 +26,13 @@ admin          | admin          | admin123
 
 ### Projektin kuvaus
 
-Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin kadut ja kaupunginosat.
+Projektin aiheena on sovellus, jossa käyttäjä näkee listattuna Helsingin kadut.
 
-Käyttäjä voi luoda sovellukseen suunnitelman, johon lisätään päivämäärä ja katu, jossa on tarkoitus vierailla.
+Käyttäjä voi luoda sovellukseen suunnitelman, johon lisätään päivämäärä ja katu tai katuja, joissa on tarkoitus vierailla.
 Vierailun jälkeen katu voidaan merkitä käydyksi. Käyttäjä voi luoda, tarkastella, muokata ja 
 poistaa suunnitelmia. 
 
-Käyttäjät voivat lisätä kaupunginosia ja katuja sovellukseen. Admin-käyttäjät voivat päivittää katujen ja kaupunginosien tietoja
-sekä poistaa niitä.  
+Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päivittää katujen nimiä sekä poistaa katuja.  
 
 ### Dokumentaatio
 
@@ -47,10 +46,6 @@ Tietokantakaavio
 #### Kurssin vaatimukset
 
 - [ ] autorisointi
-- [x] käytettävyyden viilausta
-- [x] toiminnallisuus on täydentynyt
-- [x] asennusohje
-- [x] käyttöohje
 
 #### Yleiset to-do
 
@@ -74,8 +69,9 @@ Tietokantakaavio
 ## TO DO - viikko 6
 
 - [ ] monesta moneen suhde
-- [ ] toiminnallisuus on täydentynyt
-- [ ] ulkoasu, käytettävyys ja toiminnallisuus
+    - [ ] suunnitelmaan liittyy useampi katu
+- [x] toiminnallisuus on täydentynyt
+- [x] ulkoasu, käytettävyys ja toiminnallisuus
 - [ ] dokumentaation päivittäminen ja lisääminen
     - [ ] tietokantakaavion päivittäminen
     - [ ] käyttötapausten päivittäminen
@@ -117,17 +113,19 @@ Tietokantakaavio
     - [ ] monimutkaisempia yhteenvetokyselyitä
 
 - [ ] web-sovellus
-    - [ ] ei rikkinäisiä linkkejä
-    - [ ] lomakkeet toimivat järkevillä syötteillä
+    - [x] ei rikkinäisiä linkkejä
+    - [x] lomakkeet toimivat järkevillä syötteillä
     - [ ] sovellus toimii myös ei järkevillä syötteillä (validiointi joko palvelimella tai selaimella)
-    - [ ] tyyli on yhtenäinen ja käyttö tuntuu luontevalta
+        - [ ] rekistöröitymislomake
+    - [x] tyyli on yhtenäinen ja käyttö tuntuu luontevalta
 
 - [ ] käytettävyys & saavutettavuus
-    - [ ] sivut ovat loogisesti rakennetut ja helposti löydettävissä
+    - [x] sivut ovat loogisesti rakennetut ja helposti löydettävissä
         - [x] etusivu sovelluksen juuressa
-        - [ ] järkevä yleisvalikko
+        - [x] järkevä yleisvalikko
     - [x] käyttäjän syötteet validioidaan
     - [ ] virhetilanteissa ymmärrettävät virheviestit
+        - [ ] rekistöröitymislomake!
     - [ ] ACheckerin ilmoittamat ongelmat korjattu
     - [ ] sovellus on käytettävä myös isoilla tietomäärillä
         - [ ] tulosten sivutus
@@ -136,13 +134,13 @@ Tietokantakaavio
     - [ ] tehokkuus: toivotut asiat voidaan tehdä ilman turhia välivaiheita
 
 - [ ] ylläpidettävyys
-    - [ ] konfiguraatiot kehitysympäristölle
-    - [ ] konfiguraatiot tuotantoympäristölle
+    - [x] konfiguraatiot kehitysympäristölle
+    - [x] konfiguraatiot tuotantoympäristölle
     - [ ] sovellus ei sisällä tuotantoympäristön salasanoja tms
     - [ ] koodin laatu ok
         - [ ] ei copypaste - koodia
         - [ ] ei pois-kommentoitua koodia
-    - [ ] sovellus pilkottu selkeisiin luokkiin
+    - [x] sovellus pilkottu selkeisiin luokkiin
     - [ ] koodi on ymmärrettävää
         - [ ] tarpeelliset kohdat kommentoitu
 
