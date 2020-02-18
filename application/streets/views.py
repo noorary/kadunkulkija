@@ -1,15 +1,35 @@
 from application import app, db
-from flask import redirect, render_template, request, url_for
+from flask import redirect, render_template, request, url_for, Flask
 from flask_login import login_required
 from application.streets.models import Street
 from application.streets.forms import StreetForm
 from application.streets.forms import EditStreetForm
-
+from flask_paginate import Pagination, get_page_args
 from application.districts.models import District
+
 
 @app.route("/streets", methods=["GET"])
 def streets_index():
-	return render_template("/streets/list.html", streets = Street.query.all())
+
+    streets = Street.query.all()
+
+    def get_streets(offset=0, per_page=10):
+        return streets[offset: offset + per_page]
+
+    page, per_page, offset = get_page_args(page_parameter="page",
+                                           per_page_parameter="per_page")
+
+    total = len(streets)
+
+    pagination = Pagination(page=page, per_page=per_page, total=total,
+                            css_framework="bootstrap4", record_name="streets")
+
+
+    paginated_streets = get_streets(offset=offset, per_page=per_page)
+
+    return render_template("/streets/list.html", streets = paginated_streets, page=page, per_page=per_page, pagination=pagination)
+
+    
 
 @app.route("/streets/newstreet/", methods=["GET", "POST"])
 @login_required

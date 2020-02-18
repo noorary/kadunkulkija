@@ -3,6 +3,7 @@
 {% block body %}
   <table class="table">
     <tr>
+      <th> # </th>
       <th>Street</th>
       <th>District</th>
       {% if current_user.is_authenticated %}
@@ -12,6 +13,7 @@
     </tr>
     {% for street in streets %}
     <tr>
+      <td> {{loop.index + (page -1) * per_page }}</td>
       <td>{{ street.name }}</td>
       <td>{{ street.district.name }}</td>
       <td> 
@@ -28,4 +30,5 @@
 
     {% endfor %}
   </table>
+  {{ pagination.links }}
 {% endblock %}
