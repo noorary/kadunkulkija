@@ -5,7 +5,7 @@ from application.districts.models import District
 from application.streets.models import Street
 
 class StreetForm(FlaskForm):
-	name = StringField("Street name", [validators.DataRequired(), validators.Length(min=5, max=40, message="Invalid input")])
+	name = StringField("Street name", [validators.DataRequired(), validators.Length(min=5, max=40, message="Name must be between 5 and 40 characters")])
 
 	district = SelectField('District:', coerce=int, render_kw={"class": "chosen-select", "data-placeholder":"..."})
 
@@ -13,7 +13,7 @@ class StreetForm(FlaskForm):
 	    csrf = False
 
 class EditStreetForm(FlaskForm):
-	newname = StringField("New streetname")
+	newname = StringField("New streetname", [validators.DataRequired(), validators.Length(min=5, max=40, message="New name must be between 5 and 40 characters")])
 
 	class Meta:
 		csrf: False

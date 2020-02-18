@@ -11,7 +11,16 @@
             {{ form.newname.label }}
         </td>
         <td>
-            {{ form.newname(placeholder=name.data ) }}
+            {{ form.newname(placeholder=street.name.data ) }}
+        </td>
+        {% if form.newname.errors %}
+    {% for field, errors in form.errors.items() %}
+    <div class="alert alert-error">
+      {{ form[field].label }}: {{ ', '.join(errors) }}
+    </div>
+    {% endfor %}
+  {% endif %} 
+    </div>
         </td>
         </tr>
         <tr>
