@@ -57,7 +57,6 @@ Tietokantakaavio
 - [ ] "stats" omalle sivulleen 
     - [ ] tulosten sivutus
 
-
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 
@@ -90,7 +89,6 @@ Tietokantakaavio
 - [ ] dokumentaatio
     - [x] aiheen kuvaus
     - [ ] käyttöohje
-        - [ ] suunnitelmat
     - [x] asennusohje
     - [ ] rajoitteet 
     - [ ] puuttuvat ominaisuudet
@@ -105,12 +103,12 @@ Tietokantakaavio
 
 - [ ] tietokannan toteutus
     - [x] ei sql-injektiomahdollisuuksia
-    - [ ] isoissa listauksissa sivutus
+    - [x] isoissa listauksissa sivutus
     - [ ] käyttäjien syötteet validioidaan palvelimella
     - [ ] indeksien käyttö
     - [ ] SQL-virheiden käsittely
-    - [ ] tehokkaat kyselyt
-    - [ ] monimutkaisempia yhteenvetokyselyitä
+    - [x] tehokkaat kyselyt
+    - [x] monimutkaisempia yhteenvetokyselyitä
 
 - [ ] web-sovellus
     - [x] ei rikkinäisiä linkkejä
@@ -130,16 +128,14 @@ Tietokantakaavio
     - [ ] sovellus on käytettävä myös isoilla tietomäärillä
         - [ ] tulosten sivutus
         - [ ] hakutoiminnallisuus
-    - [ ] sovellus on hyödyllinen (käyttötapaukset mahdolliset tehdä)
+    - [x] sovellus on hyödyllinen (käyttötapaukset mahdolliset tehdä)
     - [ ] tehokkuus: toivotut asiat voidaan tehdä ilman turhia välivaiheita
 
 - [ ] ylläpidettävyys
     - [x] konfiguraatiot kehitysympäristölle
     - [x] konfiguraatiot tuotantoympäristölle
     - [ ] sovellus ei sisällä tuotantoympäristön salasanoja tms
-    - [ ] koodin laatu ok
-        - [ ] ei copypaste - koodia
-        - [ ] ei pois-kommentoitua koodia
+    - [x] koodin laatu ok
     - [x] sovellus pilkottu selkeisiin luokkiin
     - [ ] koodi on ymmärrettävää
         - [ ] tarpeelliset kohdat kommentoitu
@@ -154,3 +150,8 @@ Tietokantakaavio
     - [x] vähintään 2 monimutkaisempaa yhteenvetokyselyä
         - [x] Users who have completed at least 5 plans
         - [x] Streets that are part of 1 or more plans
+
+
+### To dot ennen loppupalautusta
+
+- [ ] poista kommentoitu koodi
