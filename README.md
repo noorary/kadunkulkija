@@ -40,6 +40,7 @@ Tietokantakaavio
 
 ![Tietokantakaavio](https://raw.githubusercontent.com/noorarytila/kadunkulkija/master/dokumentaatio/kadunkulkija.png)
 
+#### Sovelluksen rajoitteet ja puuttuvat ominaisuudet
 
 ## TO DO - viikko 5
 
@@ -72,7 +73,7 @@ Tietokantakaavio
 - [x] toiminnallisuus on täydentynyt
 - [x] ulkoasu, käytettävyys ja toiminnallisuus
 - [ ] dokumentaation päivittäminen ja lisääminen
-    - [ ] tietokantakaavion päivittäminen
+    - [x] tietokantakaavion päivittäminen
     - [ ] käyttötapausten päivittäminen
     - [ ] muut dokumentaation osat, kts. kurssin arvoteluperusteet
 - [ ] koodikatselmointi
@@ -90,15 +91,14 @@ Tietokantakaavio
     - [x] aiheen kuvaus
     - [ ] käyttöohje
     - [x] asennusohje
-    - [ ] rajoitteet 
-    - [ ] puuttuvat ominaisuudet
+    - [ ] rajoitteet ja puuttuvat ominaisuudet
     - [ ] user storyt
         - [ ] listaus käyttäjäryhmistä ja käyttötapauksista
     - [ ] user storyjen SQL kyselyt
     - [ ] tietokantarakenteen kuvaus
         - [ ] taulujen normalisointi tarvittaessa / perustelu normalisoinnin puutteelle
-        - [ ] tietokantakaavio osa dokumentaatiota
-        - [ ] tietokantakaavio vastaa todellista tietokantaa
+        - [x] tietokantakaavio osa dokumentaatiota
+        - [x] tietokantakaavio vastaa todellista tietokantaa
         - [ ] CREATE TABLE lauseet ja indeksien lisäykset
 
 - [ ] tietokannan toteutus
@@ -116,6 +116,10 @@ Tietokantakaavio
     - [ ] sovellus toimii myös ei järkevillä syötteillä (validiointi joko palvelimella tai selaimella)
         - [ ] rekistöröitymislomake
     - [x] tyyli on yhtenäinen ja käyttö tuntuu luontevalta
+    - [ ] sivutus käytössä
+        - [ ] edit street name
+        - [ ] plans
+    - [ ] siistit lomakkeet
 
 - [ ] käytettävyys & saavutettavuus
     - [x] sivut ovat loogisesti rakennetut ja helposti löydettävissä
@@ -155,3 +159,4 @@ Tietokantakaavio
 ### To dot ennen loppupalautusta
 
 - [ ] poista kommentoitu koodi
+- [ ] Sovelluksen rajoitteet ja puuttuvat ominaisuudet
