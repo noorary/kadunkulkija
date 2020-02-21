@@ -7,8 +7,11 @@ tietojenkäsittelytieteen kandiohjelman kurssilla Aineopintojen harjoitustyö:
 tietokantasovellus.
 
 [Asennusohje](https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/asennusohje.md)
+
 [Käyttöohje](https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/kayttoohje.md)
-[Tietokantakaavio](https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/kadunkulkija.png)
+
+[Tietorakenteen kuvaus](https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/kadunkulkija.png)
+
 [Käyttötapaukset](https://github.com/noorarytila/kadunkulkija/blob/master/dokumentaatio/kayttotapaukset.md)
 
 ### Heroku
@@ -34,19 +37,8 @@ poistaa suunnitelmia.
 
 Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päivittää katujen nimiä sekä poistaa katuja.  
 
-### Dokumentaatio
 
-Tietokantakaavio
-
-![Tietokantakaavio](https://raw.githubusercontent.com/noorarytila/kadunkulkija/master/dokumentaatio/kadunkulkija.png)
-
-#### Sovelluksen rajoitteet ja puuttuvat ominaisuudet
-
-## TO DO - viikko 5
-
-#### Kurssin vaatimukset
-
-- [ ] autorisointi
+### Sovelluksen rajoitteet ja puuttuvat ominaisuudet
 
 #### Yleiset to-do
 
@@ -72,10 +64,10 @@ Tietokantakaavio
     - [ ] suunnitelmaan liittyy useampi katu
 - [x] toiminnallisuus on täydentynyt
 - [x] ulkoasu, käytettävyys ja toiminnallisuus
-- [ ] dokumentaation päivittäminen ja lisääminen
+- [x] dokumentaation päivittäminen ja lisääminen
     - [x] tietokantakaavion päivittäminen
-    - [ ] käyttötapausten päivittäminen
-    - [ ] muut dokumentaation osat, kts. kurssin arvoteluperusteet
+    - [x] käyttötapausten päivittäminen
+- [ ] autorisointi
 - [ ] koodikatselmointi
 
 ## TO DO - viimeinen viikko
@@ -89,17 +81,16 @@ Tietokantakaavio
 
 - [ ] dokumentaatio
     - [x] aiheen kuvaus
-    - [ ] käyttöohje
+    - [x] käyttöohje
     - [x] asennusohje
     - [ ] rajoitteet ja puuttuvat ominaisuudet
-    - [ ] user storyt
-        - [ ] listaus käyttäjäryhmistä ja käyttötapauksista
+    - [x] user storyt
     - [ ] user storyjen SQL kyselyt
     - [ ] tietokantarakenteen kuvaus
         - [ ] taulujen normalisointi tarvittaessa / perustelu normalisoinnin puutteelle
         - [x] tietokantakaavio osa dokumentaatiota
         - [x] tietokantakaavio vastaa todellista tietokantaa
-        - [ ] CREATE TABLE lauseet ja indeksien lisäykset
+        - [x] CREATE TABLE lauseet ja indeksien lisäykset
 
 - [ ] tietokannan toteutus
     - [x] ei sql-injektiomahdollisuuksia
