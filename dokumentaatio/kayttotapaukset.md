@@ -1,5 +1,7 @@
 # Kadunkulkija - tietokantasovelluksen käyttötapauksia
 
+Sovelluksesta löytyy tavallisia käyttäjiä 'user', sekä ylläpitäjiä 'admin'.
+
 ### Käyttäjänä haluan...
 
 #### Toteutetut user storyt
