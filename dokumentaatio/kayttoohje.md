@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Käyttäjän avatessa sovelluksen osoitteessa [https://kadunkulkija.herokuapp.com/](https://kadunkulkija.herokuapp.com/) käyttäjä ohjataan ensimmäisenä sovelluksen etusivulle. Etusivulla on yleistä tietoa sovelluksesta. Ylänavigointipalkista voi (1) katsella sovelluksesta löytyviä katuja `List streets`, (2) lisätä kadun `Add a street` (vain kirjautuneet käyttäjät), (3) kirjautua sisään `Login` ja (4) rekistöröidä uuden käyttäjän `Sign up`. 
+Käyttäjän avatessa sovelluksen osoitteessa [https://kadunkulkija.herokuapp.com/](https://kadunkulkija.herokuapp.com/) käyttäjä ohjataan ensimmäisenä sovelluksen etusivulle. Etusivulla on yleistä tietoa sovelluksesta. Ylänavigointipalkista voi (1) katsella sovelluksesta löytyviä katuja `List streets`, (2) lisätä kadun `Add a street` (vain kirjautuneet käyttäjät), (3) kirjautua sisään `Login` ja (4) rekistöröidä uuden käyttäjän `Sign up`. Osa toiminnallisuuksista löytyy `Menu` -valikosta.
 
 ## Rekistöröityminen ja kirjautuminen
 
