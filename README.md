@@ -42,13 +42,31 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 
 #### Yleiset to-do
 
-- [x] kirjautuneelle käyttäjälle linkki omiin suunnitelmiin
-- [x] dropdown valikko navbariin
-- [x] Katujen listaukseen näkyviin myös kaupungin osa
-- [x] Kadun nimeä voi muokata suoraan listauksesta
+- [ ] rekistöröitymislomakkeen validiointi
+- [ ] rekistöröitymislomakkeen virheviestit
+- [ ] monesta moneen suhde
+    - [ ] suunnitelmaan liittyy useampi katu
+- [ ] toinen täysi CRUD
+
+- [ ] sivutus käytössä
+     - [ ] edit street name
+     - [ ] plans
+
+- [ ] autorisointi
 
 - [ ] "stats" omalle sivulleen 
     - [ ] tulosten sivutus
+
+- [ ] taulujen normalisointi
+- [ ] indeksien käyttö
+- [ ] SQL virheiden käsittely
+
+- [ ] AChecker
+- [ ] Haku käytössä kaduilla
+
+- [ ] koodin kommentointi
+
+- [ ] sivujen asettelut kuntoon
 
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
@@ -60,14 +78,6 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 
 ## TO DO - viikko 6
 
-- [ ] monesta moneen suhde
-    - [ ] suunnitelmaan liittyy useampi katu
-- [x] toiminnallisuus on täydentynyt
-- [x] ulkoasu, käytettävyys ja toiminnallisuus
-- [x] dokumentaation päivittäminen ja lisääminen
-    - [x] tietokantakaavion päivittäminen
-    - [x] käyttötapausten päivittäminen
-- [ ] autorisointi
 - [ ] koodikatselmointi
 
 ## TO DO - viimeinen viikko
@@ -75,6 +85,11 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [ ] demo
 - [ ] viimeiset viilaukset
 - [ ] loppupalautus
+
+### To dot ennen loppupalautusta
+
+- [ ] poista kommentoitu koodi
+- [ ] Sovelluksen rajoitteet ja puuttuvat ominaisuudet
 
 ## TO DO - kurssin arvosteluperusteet & muut tärkeät
 
@@ -95,7 +110,7 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [ ] tietokannan toteutus
     - [x] ei sql-injektiomahdollisuuksia
     - [x] isoissa listauksissa sivutus
-    - [ ] käyttäjien syötteet validioidaan palvelimella
+    - [x] käyttäjien syötteet validioidaan palvelimella
     - [ ] indeksien käyttö
     - [ ] SQL-virheiden käsittely
     - [x] tehokkaat kyselyt
@@ -105,11 +120,7 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
     - [x] ei rikkinäisiä linkkejä
     - [x] lomakkeet toimivat järkevillä syötteillä
     - [ ] sovellus toimii myös ei järkevillä syötteillä (validiointi joko palvelimella tai selaimella)
-        - [ ] rekistöröitymislomake
     - [x] tyyli on yhtenäinen ja käyttö tuntuu luontevalta
-    - [ ] sivutus käytössä
-        - [ ] edit street name
-        - [ ] plans
     - [ ] siistit lomakkeet
 
 - [ ] käytettävyys & saavutettavuus
@@ -118,18 +129,17 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
         - [x] järkevä yleisvalikko
     - [x] käyttäjän syötteet validioidaan
     - [ ] virhetilanteissa ymmärrettävät virheviestit
-        - [ ] rekistöröitymislomake!
     - [ ] ACheckerin ilmoittamat ongelmat korjattu
     - [ ] sovellus on käytettävä myös isoilla tietomäärillä
         - [ ] tulosten sivutus
         - [ ] hakutoiminnallisuus
     - [x] sovellus on hyödyllinen (käyttötapaukset mahdolliset tehdä)
-    - [ ] tehokkuus: toivotut asiat voidaan tehdä ilman turhia välivaiheita
+    - [x] tehokkuus: toivotut asiat voidaan tehdä ilman turhia välivaiheita
 
 - [ ] ylläpidettävyys
     - [x] konfiguraatiot kehitysympäristölle
     - [x] konfiguraatiot tuotantoympäristölle
-    - [ ] sovellus ei sisällä tuotantoympäristön salasanoja tms
+    - [x] sovellus ei sisällä tuotantoympäristön salasanoja tms
     - [x] koodin laatu ok
     - [x] sovellus pilkottu selkeisiin luokkiin
     - [ ] koodi on ymmärrettävää
@@ -145,9 +155,3 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
     - [x] vähintään 2 monimutkaisempaa yhteenvetokyselyä
         - [x] Users who have completed at least 5 plans
         - [x] Streets that are part of 1 or more plans
-
-
-### To dot ennen loppupalautusta
-
-- [ ] poista kommentoitu koodi
-- [ ] Sovelluksen rajoitteet ja puuttuvat ominaisuudet
