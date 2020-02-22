@@ -85,7 +85,7 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
     - [x] asennusohje
     - [ ] rajoitteet ja puuttuvat ominaisuudet
     - [x] user storyt
-    - [ ] user storyjen SQL kyselyt
+    - [x] user storyjen SQL kyselyt
     - [ ] tietokantarakenteen kuvaus
         - [ ] taulujen normalisointi tarvittaessa / perustelu normalisoinnin puutteelle
         - [x] tietokantakaavio osa dokumentaatiota
