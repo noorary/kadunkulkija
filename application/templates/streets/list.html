@@ -8,7 +8,9 @@
       <th>District</th>
       {% if current_user.is_authenticated %}
       <th>Edit street name</th>
-      <!-- <th>Delete street</th> -->
+      {% endif %}
+      {% if current_user.admin ==true %}
+      <th>Delete street</th>
       {% endif %}
     </tr>
     {% for street in streets %}
@@ -16,16 +18,20 @@
       <td> {{loop.index + (page -1) * per_page }}</td>
       <td>{{ street.name }}</td>
       <td>{{ street.district.name }}</td>
+      {% if current_user.is_authenticated %}
       <td> 
         <form method="GET" action="{{ url_for('edit_street_name', street_id=street.id) }}">
           <input type="submit" value="Edit"/>
         </form>
       </td>
-      <!-- <td>
+      {% endif %}
+      {% if current_user.admin ==true %}
+      <td>
         <form method="POST" action="{{ url_for('delete_street', street_id=street.id) }}">
           <input type="submit" value="Delete"/>
         </form>
-      </td> -->
+      </td>
+      {% endif %}
     </tr>
 
     {% endfor %}
