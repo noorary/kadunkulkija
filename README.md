@@ -37,7 +37,7 @@ poistaa suunnitelmia.
 
 Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päivittää katujen nimiä sekä poistaa katuja.  
 
-[Tietokantakaavio]!(https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/kadunkulkija.png?raw=true)
+![Tietokantakaavio](https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/kadunkulkija.png?raw=true)
 
 ### Sovelluksen rajoitteet ja puuttuvat ominaisuudet
 
@@ -48,6 +48,7 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [x] toinen täysi CRUD
 - [ ] monesta moneen suhde
     - [ ] suunnitelmaan liittyy useampi katu
+- [ ] MIGRAATIO ETTÄ HEROKU TOIMIS
 - [ ] korjaa stats poistettujen katujen osalta
 
 
@@ -83,9 +84,6 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [ ] kahta samaa käyttäjänimeä ei voi olla
 - [ ] käyttäjä voi muokata omia tietojaan
 
-## TO DO - viikko 6
-
-- [ ] koodikatselmointi
 
 ## TO DO - viimeinen viikko
 
@@ -153,9 +151,9 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [ ] arvosana 5 minimivaatimukset
     - [x] vähintään 3 tietokantataulua (+ liitostaulut)
     - [x] käyttäjä liittyy muuhunkin kuin kirjautumiseen (suunnitelmat)
-    - [ ] vähintään kahdesta tietokohtaasta täysi CRUD 
+    - [x] vähintään kahdesta tietokohtaasta täysi CRUD 
         - [x] suunnitelmat
-        - [ ] joku muu?
+        - [x] kadut
     - [ ] yksi tai useampi monesta moneen suhde
     - [x] vähintään 2 monimutkaisempaa yhteenvetokyselyä
         - [x] Users who have completed at least 5 plans
