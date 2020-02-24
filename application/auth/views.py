@@ -30,7 +30,7 @@ def auth_logout():
 @app.route("/auth/signup", methods = ["GET", "POST"])
 def auth_signup():
 
-    form = SignupForm(request.form)
+    form = SignupForm(request.form) 
 
     if form.validate_on_submit():
 
@@ -40,6 +40,6 @@ def auth_signup():
         db.session().commit()
 
         return redirect(url_for("auth_login"))
-
-    return render_template("auth/signupform.html", form = SignupForm())
+    print(form.errors)
+    return render_template("auth/signupform.html", form = form)
     

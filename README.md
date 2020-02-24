@@ -42,8 +42,8 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 
 #### Yleiset to-do
 
-- [ ] rekistöröitymislomakkeen validiointi
-- [ ] rekistöröitymislomakkeen virheviestit
+- [x] rekistöröitymislomakkeen validiointi
+- [x] rekistöröitymislomakkeen virheviestit
 - [ ] monesta moneen suhde
     - [ ] suunnitelmaan liittyy useampi katu
 - [ ] toinen täysi CRUD

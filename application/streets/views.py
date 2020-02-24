@@ -50,7 +50,7 @@ def street_form():
         db.session().commit()
 
         return redirect(url_for("streets_index"))
-    
+    print(form.errors)
     return render_template("streets/newstreet.html", form = form)
 
     
