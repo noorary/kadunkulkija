@@ -37,6 +37,7 @@ poistaa suunnitelmia.
 
 Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päivittää katujen nimiä sekä poistaa katuja.  
 
+[Tietokantakaavio]!(https://github.com/noorary/kadunkulkija/blob/master/dokumentaatio/kadunkulkija.png?raw=true)
 
 ### Sovelluksen rajoitteet ja puuttuvat ominaisuudet
 
@@ -44,9 +45,12 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 
 - [x] rekistöröitymislomakkeen validiointi
 - [x] rekistöröitymislomakkeen virheviestit
+- [x] toinen täysi CRUD
 - [ ] monesta moneen suhde
     - [ ] suunnitelmaan liittyy useampi katu
-- [ ] toinen täysi CRUD
+- [ ] korjaa stats poistettujen katujen osalta
+
+
 
 - [ ] sivutus käytössä
      - [ ] edit street name
@@ -54,8 +58,14 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 
 - [ ] autorisointi
 
+- [ ] sivujen asettelut kuntoon
+
 - [ ] "stats" omalle sivulleen 
     - [ ] tulosten sivutus
+
+- [ ] muokkaukseen muokattava tieto valmiiksi
+- [ ] muuta yksimerkkiset muuttujanimet
+- [ ] mieti pudotusvalikkoa ja yleisvalikkoa
 
 - [ ] taulujen normalisointi
 - [ ] indeksien käyttö
@@ -66,15 +76,12 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 
 - [ ] koodin kommentointi
 
-- [ ] sivujen asettelut kuntoon
-
 - [ ] salasanat tallennetaan tietokantaan kryptattuna
 - [ ] muokkauksessa tieto lomakkeeseen valmiiksi
 
 - [ ] kirjautuminen onnistui - ilmoitus
 - [ ] kahta samaa käyttäjänimeä ei voi olla
 - [ ] käyttäjä voi muokata omia tietojaan
-- [ ] tyylittele sivuja
 
 ## TO DO - viikko 6
 
@@ -82,7 +89,6 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 
 ## TO DO - viimeinen viikko
 
-- [ ] demo
 - [ ] viimeiset viilaukset
 - [ ] loppupalautus
 
@@ -119,14 +125,13 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [ ] web-sovellus
     - [x] ei rikkinäisiä linkkejä
     - [x] lomakkeet toimivat järkevillä syötteillä
-    - [ ] sovellus toimii myös ei järkevillä syötteillä (validiointi joko palvelimella tai selaimella)
+    - [x] sovellus toimii myös ei järkevillä syötteillä (validiointi joko palvelimella tai selaimella)
     - [x] tyyli on yhtenäinen ja käyttö tuntuu luontevalta
-    - [ ] siistit lomakkeet
 
 - [ ] käytettävyys & saavutettavuus
-    - [x] sivut ovat loogisesti rakennetut ja helposti löydettävissä
+    - [ ] sivut ovat loogisesti rakennetut ja helposti löydettävissä
         - [x] etusivu sovelluksen juuressa
-        - [x] järkevä yleisvalikko
+        - [ ] järkevä yleisvalikko
     - [x] käyttäjän syötteet validioidaan
     - [ ] virhetilanteissa ymmärrettävät virheviestit
     - [ ] ACheckerin ilmoittamat ongelmat korjattu

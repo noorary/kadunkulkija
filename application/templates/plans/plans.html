@@ -16,7 +16,11 @@
       {% if plan.account_id == current_user.id %}
     <tr>
         <td> {{ plan.plandate }}</td>
+        {% if plan.street != None %}
         <td> {{ plan.street.name }} </td>
+        {% else %}
+        <td><p class="alert alert-danger" role="alert">Street has been deleted!!</p> </td>
+        {% endif %}
         <td> {{ plan.completed }} </td>
         <td>
             <form method="POST" action="{{ url_for('plan_set_completed', plan_id=plan.id) }}">

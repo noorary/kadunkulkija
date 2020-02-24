@@ -70,9 +70,7 @@ def edit_street_name(street_id):
 @app.route("/streets/edit/", methods=["GET"])
 @login_required
 def street_edit():
-
-
-
+    
     return render_template("streets/editlist.html/", streets = Street.query.all() )
 
 @app.route("/streets/edit/ready/<street_id>", methods=["POST"])
