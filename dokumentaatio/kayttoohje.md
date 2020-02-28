@@ -1,7 +1,6 @@
 # Käyttöohje
 
-Käyttäjän avatessa sovelluksen osoitteessa [https://kadunkulkija.herokuapp.com/](https://kadunkulkija.herokuapp.com/) käyttäjä ohjataan ensimmäisenä sovelluksen etusivulle. Etusivulla on yleistä tietoa sovelluksesta. Ylänavigointipalkista voi (1) katsella sovelluksesta löytyviä katuja `List streets`, (2) lisätä kadun `Add a street` (vain kirjautuneet käyttäjät), (3) kirjautua sisään `Login` ja (4) rekistöröidä uuden käyttäjän `Sign up`. Osa toiminnallisuuksista löytyy `Menu` -valikosta.
-
+Käyttäjän avatessa sovelluksen osoitteessa [https://kadunkulkija.herokuapp.com/](https://kadunkulkija.herokuapp.com/) käyttäjä ohjataan ensimmäisenä sovelluksen etusivulle. Etusivulla on yleistä tietoa sovelluksesta. Ylänavigointipalkista voi (katsella sovelluksesta löytyviä katuja `List streets`, lisätä kadun `Add a street` (vain kirjautuneet käyttäjät), kirjautua sisään `Login` ja rekistöröidä uuden käyttäjän `Sign up` tai tarkastella tilastoja `Statistics`.
 ## Rekistöröityminen ja kirjautuminen
 
 Navigaatiopalkin oikeasta reunasta löytyy mahdollisuus kirjautumiseen ja rekisteröitymiseen.
@@ -50,6 +49,14 @@ Kirjautunut käyttäjä löytää navigointivalikosta `My plan`-linkin, josta p�
 ### Uuden suunnitelman lisääminen
 
 Suunnitelmien alta löytyy `Add new plan`-painike, jota klikkaamalla pääsee lisäämään uuden suunnitelman. Suunnitelmaan tulee valita katu, jossa on tarkoitus vierailla sekä suunniteltu päivä. Suunnitelman päivä on oletusarvoisesti suunnitelman luontipäivä. 
+
+### Useamman kadun lisääminen suunnitelmaan
+
+Suunnitelmaan pääsee lisäämään useampia katuja klikkaamalla halutun suunnitelman kohdalta `Add several streets`. Avautuvalta sivulta valitaan lisättävä katu ja katu lisätään suunnitelmaan klikkaamalla `Add more streets to the plan`.
+
+### Tilastojen tarkastelu
+
+Tilastoja pääsee tarkastelemaan klikkaamalla `Statistics`yläpalkista.
 
 ## Kadun nimen muokkaaminen
 

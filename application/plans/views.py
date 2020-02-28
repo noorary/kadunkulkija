@@ -9,14 +9,14 @@ from flask_paginate import Pagination, get_page_args
 from application.plans.models import streets_in_plan
 
 @app.route("/myplans", methods=["GET"])
- #@login_required
+@login_required
 def myplan_index():
 
     return render_template("/plans/plans.html", plans = Plan.query.order_by(Plan.plandate).all())
     
 
 @app.route("/myplans/newplan", methods=["POST", "GET"])
-# @login_required
+@login_required
 def plan_add():
 
     streets = Street.query.all()
@@ -35,7 +35,6 @@ def plan_add():
 
         new_plan.completed = False
         new_plan.plandate = form.plandate.data
-        # new_plan.street_id = form.street.data
         new_plan.account_id = current_user.id
 
         db.session().add(new_plan)
@@ -70,6 +69,7 @@ def delete_plan(plan_id):
     return redirect(url_for("myplan_index"))
 
 @app.route("/myplans/addmore/<plan_id>", methods=["GET", "POST"])
+@login_required
 def add_many_streets(plan_id):
 
     plan = Plan.query.get(plan_id)

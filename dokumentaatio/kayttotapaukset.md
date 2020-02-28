@@ -29,10 +29,7 @@ Sovelluksesta löytyy tavallisia käyttäjiä 'user', sekä ylläpitäjiä 'admi
 * Hallinnoida katuja ja kaupunginosia
   * Muokata katuja
   * Lisätä kaupunginosia
-
-#### Vielä toteuttamatta
-
-* Poistaa kaupunkeja
+  * Poistaa kaupunkeja
 
 
 ## SQL-kyselyt 
@@ -53,6 +50,13 @@ SELECT * FROM street;
 
 ```
 INSERT INTO street ("date_created", "date_modified", "name", "district_id") VALUES (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, ?, ?);
+```
+
+* Katujen poistaminen
+
+```
+DELETE FROM street WHERE street.id = ' + id
+'DELETE FROM street_plan WHERE street_id = ' + id
 ```
 
 * Kadun nimen muokkaaminen

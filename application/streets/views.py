@@ -111,7 +111,7 @@ def delete_street(street_id):
     stmnt = 'DELETE FROM street WHERE street.id = ' + id
     stmnt2 = 'DELETE FROM street_plan WHERE street_id = ' + id
     db.engine.execute(stmnt)
-    #db.engine.execute(stmnt2)
+    db.engine.execute(stmnt2)
     db.session.commit()
 
     return redirect(url_for('streets_index'))

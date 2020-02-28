@@ -13,7 +13,6 @@ class Plan(Base):
     completed = db.Column(db.Boolean, default=False, nullable=False)
     
     street_plans = db.relationship('Street', secondary=street_plan, backref='plan')
-    # street_id = db.Column(db.Integer, db.ForeignKey('street.id'), nullable=True)
     account_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
 
 

@@ -2,6 +2,12 @@
 
 {% block body %}
 
+<form method="GET" action="{{ url_for('plan_add') }}"></form>
+
+    <div class="form-group col-sm-5">
+        <a href="/myplans/newplan"><input type="button" value="Add new plan" class="btn btn-outline-primary"></a>
+    </div>
+</form>
 
 <h2>Here is your plans</h2>
 
@@ -55,7 +61,7 @@
 <form method="GET" action="{{ url_for('plan_add') }}"></form>
 
     <div class="form-group col-sm-5">
-        <a href="/myplans/newplan"><input type="button" value="Add new plan"></a>
+        <a href="/myplans/newplan"><input type="button" value="Add new plan" class="btn btn-outline-primary"></a>
     </div>
 </form>
 
