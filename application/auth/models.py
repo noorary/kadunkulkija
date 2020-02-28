@@ -34,29 +34,29 @@ class User(Base):
         return True
 
 
-    @staticmethod
-    def find_users_with_fiveormore_completed(completed='true'):
+    # @staticmethod
+    # def find_users_with_fiveormore_completed(completed='true'):
 
-        if os.environ.get("HEROKU"):
+    #     if os.environ.get("HEROKU"):
 
-            stmt = text("SELECT Account.id, Account.name FROM Account"
-                        " LEFT JOIN Plan ON Plan.account_id = Account.id"
-                        " WHERE (Plan.completed = :completed )"
-                        " GROUP BY Account.id"
-                        " HAVING COUNT(Plan.id) >= 5").params(completed=completed)
-        else: 
+    #         stmt = text("SELECT Account.id, Account.name FROM Account"
+    #                     " LEFT JOIN Plan ON Plan.account_id = Account.id"
+    #                     " WHERE (Plan.completed = :completed )"
+    #                     " GROUP BY Account.id"
+    #                     " HAVING COUNT(Plan.id) >= 5").params(completed=completed)
+    #     else: 
 
-            stmt = text("SELECT Account.id, Account.name FROM Account"
-                        " LEFT JOIN Plan ON Plan.account_id = Account.id"
-                        " WHERE (Plan.completed = 1)"
-                        " GROUP BY Account.id"
-                        " HAVING COUNT(Plan.id) >= 5")
+    #         stmt = text("SELECT Account.id, Account.name FROM Account"
+    #                     " LEFT JOIN Plan ON Plan.account_id = Account.id"
+    #                     " WHERE (Plan.completed = 1)"
+    #                     " GROUP BY Account.id"
+    #                     " HAVING COUNT(Plan.id) >= 5")
                         
-        res = db.engine.execute(stmt)
+    #     res = db.engine.execute(stmt)
 
-        response = []
+    #     response = []
 
-        for row in res:
-            response.append({"id":row[0], "name":row[1]})
+    #     for row in res:
+    #         response.append({"id":row[0], "name":row[1]})
 
-        return response
+    #     return response

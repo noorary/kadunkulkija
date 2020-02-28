@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<form method="POST" action="{{ url_for('add_many_streets', plan_id = plan.id) }}">
+    <div class="form-row">
+      <div class="form-group col-sm-3">
+        <label for="Street"> {{ form.street.label }} </label>
+      </div>
+      <div class="form-group col-sm-3">
+          {{ form.street(class="form-control", size="5") }}
+      </div>
+    </div>
+    {% if form.street.errors %}
+      {% for error in form.street.error %}
+        {{ error }}
+      {% endfor %}
+    {% endif %} 
+    <div class="form-group">
+      <div class="form-group col-sm-5">
+        <input type="submit" value="Add more streets to the plan">
+      </div>
+      
+    </div>
+  </form>
+
+{% endblock %}

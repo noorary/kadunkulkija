@@ -7,29 +7,43 @@
 <table class="table">
     <tr>
         <th> Date </th>
-        <th> Street </th>
+        <th> Streets </th>
         <th> Completed </th>
         <th> Set plan completed</th>
         <th> Delete plan </th>
+        <th> Add several streets </th>
     </tr>
     {% for plan in plans %}
       {% if plan.account_id == current_user.id %}
     <tr>
         <td> {{ plan.plandate }}</td>
-        {% if plan.street != None %}
-        <td> {{ plan.street.name }} </td>
-        {% else %}
-        <td><p class="alert alert-danger" role="alert">Street has been deleted!!</p> </td>
-        {% endif %}
+        <td>
+            {% if plan.id == selected_plan_id %}
+                {% for street in selected_plan_streets %}
+                    {{ street.name }}
+                {% endfor %}
+            {% else %}
+              <form method="GET" action="{{ url_for('plan_show_streets', plan_id=plan.id) }}">
+                  <input type="submit" value="Show" class="btn btn-outline-success" />
+              </form>
+            {% endif %}
+        </td>
         <td> {{ plan.completed }} </td>
+        {% if plan.street != None %}
         <td>
             <form method="POST" action="{{ url_for('plan_set_completed', plan_id=plan.id) }}">
                 <input type="submit" value="Complete!"/>
             </form>
         </td>
+        {% endif %}
         <td>
             <form method="POST" action="{{ url_for('delete_plan', plan_id=plan.id) }}">
                 <input type="submit" value="Delete plan"/>
+            </form>
+        </td>
+        <td>
+            <form method="GET" action="{{ url_for('add_many_streets', plan_id=plan.id) }}">
+                <input type="submit" value="Add several streets"/>
             </form>
         </td>
     </tr>

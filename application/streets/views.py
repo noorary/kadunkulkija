@@ -70,8 +70,24 @@ def edit_street_name(street_id):
 @app.route("/streets/edit/", methods=["GET"])
 @login_required
 def street_edit():
+
+    streets = Street.query.all()
+
+    def get_streets(offset=0, per_page=10):
+        return streets[offset: offset + per_page]
+
+    page, per_page, offset = get_page_args(page_parameter="page",
+                                           per_page_parameter="per_page")
+
+    total = len(streets)
+
+    pagination = Pagination(page=page, per_page=per_page, total=total,
+                            css_framework="bootstrap4", record_name="streets")
+
+
+    paginated_streets = get_streets(offset=offset, per_page=per_page)
     
-    return render_template("streets/editlist.html/", streets = Street.query.all() )
+    return render_template("streets/editlist.html/", streets = paginated_streets, page=page, per_page=per_page, pagination=pagination)
 
 @app.route("/streets/edit/ready/<street_id>", methods=["POST"])
 @login_required
@@ -87,12 +103,15 @@ def set_new_name(street_id):
 
     return redirect(url_for("streets_index"))
 
-@app.route("/streets/delete/<street_id>", methods=["GET", "POST"])
+@app.route("/streets/delete/<street_id>", methods=["POST"])
 @login_required
 def delete_street(street_id):
 
-    s = Street.query.get(street_id)
-    db.session.delete(s)
+    id = street_id
+    stmnt = 'DELETE FROM street WHERE street.id = ' + id
+    stmnt2 = 'DELETE FROM street_plan WHERE street_id = ' + id
+    db.engine.execute(stmnt)
+    #db.engine.execute(stmnt2)
     db.session.commit()
 
     return redirect(url_for('streets_index'))

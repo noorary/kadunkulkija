@@ -48,13 +48,13 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [x] toinen täysi CRUD
 - [ ] monesta moneen suhde
     - [ ] suunnitelmaan liittyy useampi katu
-- [ ] MIGRAATIO ETTÄ HEROKU TOIMIS
 - [ ] korjaa stats poistettujen katujen osalta
+- [ ] listaukset aakkosjärjestykseen
 
-
+- [ ] rekistöröityessä suoraan kirjaudutaan sisään
 
 - [ ] sivutus käytössä
-     - [ ] edit street name
+     - [x] edit street name
      - [ ] plans
 
 - [ ] autorisointi
@@ -65,7 +65,6 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
     - [ ] tulosten sivutus
 
 - [ ] muokkaukseen muokattava tieto valmiiksi
-- [ ] muuta yksimerkkiset muuttujanimet
 - [ ] mieti pudotusvalikkoa ja yleisvalikkoa
 
 - [ ] taulujen normalisointi

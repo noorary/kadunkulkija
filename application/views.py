@@ -5,4 +5,6 @@ from application.streets.models import Street
 
 @app.route("/")
 def index():
-    return render_template("index.html", has_visited=User.find_users_with_fiveormore_completed(), many_plans=Street.find_streets_in_many_plans())
+    return render_template("index.html")
+
+# ", has_visited=User.find_users_with_fiveormore_completed(), many_plans=Street.find_streets_in_many_plans()
