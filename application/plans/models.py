@@ -12,7 +12,7 @@ class Plan(Base):
     plandate = db.Column(db.Date)
     completed = db.Column(db.Boolean, default=False, nullable=False)
     
-    street_plans = db.relationship('Street', secondary=street_plan, backref='plan')
+    street_plans = db.relationship('Street', secondary=street_plan, backref='plan', cascade="all, delete-orphan")
     account_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
 
 
