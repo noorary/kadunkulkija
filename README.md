@@ -43,27 +43,7 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 
 #### Yleiset to-do
 
-- [x] rekistöröitymislomakkeen validiointi
-- [x] rekistöröitymislomakkeen virheviestit
-- [x] toinen täysi CRUD
-- [x] monesta moneen suhde
-
-- [x] sivutus käytössä
-
-- [x] sivujen asettelut kuntoon
-
-- [ ] "stats" omalle sivulleen 
-    - [ ] tulosten sivutus
-
-- [ ] muokkaukseen muokattava tieto valmiiksi
-
-- [ ] taulujen normalisointi
-- [ ] indeksien käyttö
-- [ ] SQL virheiden käsittely
-
 - [ ] AChecker
-
-- [ ] koodin kommentointi
 
 ### To dot ennen loppupalautusta
 

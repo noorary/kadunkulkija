@@ -58,6 +58,7 @@ from application.plans import models
 from application.streets import views
 from application.districts import views
 from application.plans import views
+from application.stats import views
 
 from application.auth import models
 from application.auth import views

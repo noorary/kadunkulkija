@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h2>Statistics</h2>
+
+{% if has_visited is defined %}
+<h3>
+  The following users have completed 5 or more plans!
+</h3>
+
+<table class="table">
+  {% for user in has_visited %}
+  <tr>
+    <td>
+      {{user.name}}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% if many_plans is defined %}
+<h3>
+  The following streets are part of 1 or more plans!
+</h3>
+
+<table class="table">
+  {% for street in many_plans %}
+  <tr>
+    <td>
+      {{street.name}}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% else %}
+
+<p>There are no stats yet :(</p>
+
+{% endif %}
+{% endif %}
+
+
+{% endblock %}
