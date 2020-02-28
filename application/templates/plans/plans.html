@@ -2,6 +2,7 @@
 
 {% block body %}
 
+
 <h2>Here is your plans</h2>
 
 <table class="table">
@@ -24,7 +25,7 @@
                 {% endfor %}
             {% else %}
               <form method="GET" action="{{ url_for('plan_show_streets', plan_id=plan.id) }}">
-                  <input type="submit" value="Show" class="btn btn-outline-success" />
+                  <input type="submit" value="Show" class="btn btn-outline-primary" />
               </form>
             {% endif %}
         </td>
@@ -32,18 +33,18 @@
         {% if plan.street != None %}
         <td>
             <form method="POST" action="{{ url_for('plan_set_completed', plan_id=plan.id) }}">
-                <input type="submit" value="Complete!"/>
+                <input type="submit" value="Complete!" class="btn btn-outline-success"/>
             </form>
         </td>
         {% endif %}
         <td>
             <form method="POST" action="{{ url_for('delete_plan', plan_id=plan.id) }}">
-                <input type="submit" value="Delete plan"/>
+                <input type="submit" value="Delete plan" class="btn btn-outline-danger"/>
             </form>
         </td>
         <td>
             <form method="GET" action="{{ url_for('add_many_streets', plan_id=plan.id) }}">
-                <input type="submit" value="Add several streets"/>
+                <input type="submit" value="Add several streets" class="btn btn-outline-primary"/>
             </form>
         </td>
     </tr>

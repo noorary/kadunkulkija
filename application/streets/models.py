@@ -16,6 +16,19 @@ class Street(Base):
 	def __init__(self, name): 
 		self.name = name
 
+		
+	def users_plan(account_id):
+
+		stmnt = text("SELECT plan.id, plan.plandate, plan.completed FROM plan"
+					" JOIN account ON account.id = account_id"
+					" WHERE account.id = plan.account_id")
+
+		result = db.engine.execute(stmnt)
+
+		response = []
+
+		for row in result:
+			response.append({"id":row[0], "plandate":row[1], "completed":row[2]})
 
 	@staticmethod
 	def find_streets_in_many_plans():

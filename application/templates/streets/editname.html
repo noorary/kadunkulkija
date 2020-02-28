@@ -5,6 +5,7 @@
 <p> Give new name for the street </p>
 
 <form method="POST" action="{{ url_for('set_new_name', street_id=street.id) }}">
+    <div class="form-group">
     <table>
         <tr>
             <td>
@@ -21,11 +22,12 @@
     {% endfor %}
   {% endif %} 
     </div>
+    </div>
         </td>
         </tr>
         <tr>
             <td colspan="2">
-                <input type="submit" value="Update name"/>
+                <input type="submit" value="Update name" class="btn btn-outline-success"/>
             </td>
         </tr>
     </table>

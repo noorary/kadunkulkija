@@ -47,20 +47,15 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [x] rekistöröitymislomakkeen virheviestit
 - [x] toinen täysi CRUD
 - [x] monesta moneen suhde
-- [ ] korjaa stats poistettujen katujen osalta
 
-- [ ] sivutus käytössä
-     - [x] edit street name
-     - [ ] plans
-- [ ] listaukset aakkosjärjestykseen
+- [x] sivutus käytössä
 
-- [ ] sivujen asettelut kuntoon
+- [x] sivujen asettelut kuntoon
 
 - [ ] "stats" omalle sivulleen 
     - [ ] tulosten sivutus
 
 - [ ] muokkaukseen muokattava tieto valmiiksi
-- [ ] mieti pudotusvalikkoa ja yleisvalikkoa
 
 - [ ] taulujen normalisointi
 - [ ] indeksien käyttö
@@ -108,15 +103,14 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
     - [x] tyyli on yhtenäinen ja käyttö tuntuu luontevalta
 
 - [ ] käytettävyys & saavutettavuus
-    - [ ] sivut ovat loogisesti rakennetut ja helposti löydettävissä
+    - [x] sivut ovat loogisesti rakennetut ja helposti löydettävissä
         - [x] etusivu sovelluksen juuressa
-        - [ ] järkevä yleisvalikko
+        - [x] järkevä yleisvalikko
     - [x] käyttäjän syötteet validioidaan
     - [x] virhetilanteissa ymmärrettävät virheviestit
     - [ ] ACheckerin ilmoittamat ongelmat korjattu
     - [ ] sovellus on käytettävä myös isoilla tietomäärillä
         - [ ] tulosten sivutus
-        - [ ] hakutoiminnallisuus
     - [x] sovellus on hyödyllinen (käyttötapaukset mahdolliset tehdä)
     - [x] tehokkuus: toivotut asiat voidaan tehdä ilman turhia välivaiheita
 
@@ -136,6 +130,6 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
         - [x] suunnitelmat
         - [x] kadut
     - [x] yksi tai useampi monesta moneen suhde
-    - [ ] vähintään 2 monimutkaisempaa yhteenvetokyselyä
-        - [ ] Users who have completed at least 5 plans
-        - [ ] Streets that are part of 1 or more plans
+    - [x] vähintään 2 monimutkaisempaa yhteenvetokyselyä
+        - [x] Users who have completed at least 5 plans
+        - [x] Streets that are part of 1 or more plans

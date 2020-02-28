@@ -22,14 +22,14 @@
       {% if current_user.is_authenticated %}
       <td> 
         <form method="GET" action="{{ url_for('edit_street_name', street_id=street.id) }}">
-          <input type="submit" value="Edit"/>
+          <input type="submit" value="Edit" class="btn btn-outline-primary"/>
         </form>
       </td>
       {% endif %}
       {% if current_user.admin ==true %}
       <td>
         <form method="POST" action="{{ url_for('delete_street', street_id=street.id) }}">
-          <input type="submit" value="Delete"/>
+          <input type="submit" value="Delete" class="btn btn-outline-danger"/>
         </form>
       </td>
       {% endif %}

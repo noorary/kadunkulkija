@@ -11,7 +11,7 @@ from application.districts.models import District
 @app.route("/streets", methods=["GET"])
 def streets_index():
 
-    streets = Street.query.all()
+    streets = Street.query.order_by(Street.name).all()
 
     def get_streets(offset=0, per_page=10):
         return streets[offset: offset + per_page]
@@ -50,7 +50,7 @@ def street_form():
         db.session().commit()
 
         return redirect(url_for("streets_index"))
-    print(form.errors)
+
     return render_template("streets/newstreet.html", form = form)
 
     

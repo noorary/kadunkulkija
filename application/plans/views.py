@@ -5,14 +5,14 @@ from application.plans.models import Plan, street_plan
 from application.plans.forms import PlanForm, MoreStreets
 from application.streets.models import Street
 from sqlalchemy.sql import text
-from flask_paginate import Pagination
+from flask_paginate import Pagination, get_page_args
 from application.plans.models import streets_in_plan
 
 @app.route("/myplans", methods=["GET"])
  #@login_required
 def myplan_index():
-    
-    return render_template("/plans/plans.html", plans = Plan.query.all())
+
+    return render_template("/plans/plans.html", plans = Plan.query.order_by(Plan.plandate).all())
     
 
 @app.route("/myplans/newplan", methods=["POST", "GET"])
