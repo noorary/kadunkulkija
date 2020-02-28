@@ -46,18 +46,13 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [x] rekistöröitymislomakkeen validiointi
 - [x] rekistöröitymislomakkeen virheviestit
 - [x] toinen täysi CRUD
-- [ ] monesta moneen suhde
-    - [ ] suunnitelmaan liittyy useampi katu
+- [x] monesta moneen suhde
 - [ ] korjaa stats poistettujen katujen osalta
-- [ ] listaukset aakkosjärjestykseen
-
-- [ ] rekistöröityessä suoraan kirjaudutaan sisään
 
 - [ ] sivutus käytössä
      - [x] edit street name
      - [ ] plans
-
-- [ ] autorisointi
+- [ ] listaukset aakkosjärjestykseen
 
 - [ ] sivujen asettelut kuntoon
 
@@ -72,27 +67,14 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
 - [ ] SQL virheiden käsittely
 
 - [ ] AChecker
-- [ ] Haku käytössä kaduilla
 
 - [ ] koodin kommentointi
-
-- [ ] salasanat tallennetaan tietokantaan kryptattuna
-- [ ] muokkauksessa tieto lomakkeeseen valmiiksi
-
-- [ ] kirjautuminen onnistui - ilmoitus
-- [ ] kahta samaa käyttäjänimeä ei voi olla
-- [ ] käyttäjä voi muokata omia tietojaan
-
-
-## TO DO - viimeinen viikko
-
-- [ ] viimeiset viilaukset
-- [ ] loppupalautus
 
 ### To dot ennen loppupalautusta
 
 - [ ] poista kommentoitu koodi
 - [ ] Sovelluksen rajoitteet ja puuttuvat ominaisuudet
+    - [ ] autorisointi
 
 ## TO DO - kurssin arvosteluperusteet & muut tärkeät
 
@@ -130,7 +112,7 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
         - [x] etusivu sovelluksen juuressa
         - [ ] järkevä yleisvalikko
     - [x] käyttäjän syötteet validioidaan
-    - [ ] virhetilanteissa ymmärrettävät virheviestit
+    - [x] virhetilanteissa ymmärrettävät virheviestit
     - [ ] ACheckerin ilmoittamat ongelmat korjattu
     - [ ] sovellus on käytettävä myös isoilla tietomäärillä
         - [ ] tulosten sivutus
@@ -153,7 +135,7 @@ Käyttäjät voivat lisätä katuja sovellukseen. Admin-käyttäjät voivat päi
     - [x] vähintään kahdesta tietokohtaasta täysi CRUD 
         - [x] suunnitelmat
         - [x] kadut
-    - [ ] yksi tai useampi monesta moneen suhde
-    - [x] vähintään 2 monimutkaisempaa yhteenvetokyselyä
-        - [x] Users who have completed at least 5 plans
-        - [x] Streets that are part of 1 or more plans
+    - [x] yksi tai useampi monesta moneen suhde
+    - [ ] vähintään 2 monimutkaisempaa yhteenvetokyselyä
+        - [ ] Users who have completed at least 5 plans
+        - [ ] Streets that are part of 1 or more plans
